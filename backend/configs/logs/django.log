@@ -1,0 +1,1470 @@
+[INFO] 2025-02-17 15:06:28,286 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 15:07:08,052 django.server | "POST /api/v1/auth/verify-otp/ HTTP/1.1" 200 40
+[INFO] 2025-02-17 15:07:15,477 django.server | "GET /admin/users/user/CkKaQlhnecfbOCx/change/ HTTP/1.1" 200 36848
+[INFO] 2025-02-17 15:07:15,726 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-17 15:07:24,422 django.request | Bad Request: /api/v1/auth/verify-otp/
+[WARNING] 2025-02-17 15:07:24,425 django.server | "POST /api/v1/auth/verify-otp/ HTTP/1.1" 400 39
+[INFO] 2025-02-17 15:12:39,745 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/verifications/__init__.py changed, reloading.
+[INFO] 2025-02-17 15:12:44,615 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 15:19:31,771 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/configs/settings/base.py changed, reloading.
+[INFO] 2025-02-17 15:19:36,957 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 15:27:09,574 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/verifications/__init__.py changed, reloading.
+[INFO] 2025-02-17 15:27:12,462 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-17 15:28:40,042 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-17 15:28:40,062 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 50
+[INFO] 2025-02-17 15:41:41,335 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16470
+[INFO] 2025-02-17 15:41:54,027 django.server | "GET /admin/users/user/ltWKw3VQcGK0ZYY/change/ HTTP/1.1" 200 36911
+[INFO] 2025-02-17 15:41:54,236 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-17 15:44:05,832 django.request | Bad Request: /api/v1/auth/verify-otp/
+[WARNING] 2025-02-17 15:44:05,835 django.server | "POST /api/v1/auth/verify-otp/ HTTP/1.1" 400 39
+[INFO] 2025-02-17 15:44:21,430 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/verifications/__init__.py changed, reloading.
+[INFO] 2025-02-17 15:44:25,979 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 15:50:35,575 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 15:50:39,505 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 15:50:53,095 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-17 15:50:56,260 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-17 15:52:56,349 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-17 15:52:56,359 django.server | "POST /api/v1/auth/request-otp/ HTTP/1.1" 200 36
+[INFO] 2025-02-17 15:53:14,827 django.server | "GET /admin/users/user/ltWKw3VQcGK0ZYY/change/ HTTP/1.1" 200 36911
+[INFO] 2025-02-17 15:53:15,256 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-17 15:55:04,771 django.server | "POST /api/v1/auth/verify-otp/ HTTP/1.1" 200 40
+[INFO] 2025-02-17 15:55:22,095 django.server | "GET /admin/users/user/ltWKw3VQcGK0ZYY/change/ HTTP/1.1" 200 36868
+[INFO] 2025-02-17 15:55:22,503 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-17 16:19:34,706 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 16:19:39,027 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-17 16:20:02,817 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-17 16:20:02,962 celery.app.trace | Task apps.users.tasks.send_email_verification[59a60ee1-4474-4dd1-939d-b47e3ea99f7a] succeeded in 1.1894488079997245s: None
+[INFO] 2025-02-17 16:20:02,968 django.server | "POST /api/v1/auth/request-otp/ HTTP/1.1" 200 32
+[INFO] 2025-02-17 16:20:36,024 django.server | "GET /admin/ HTTP/1.1" 200 13583
+[INFO] 2025-02-17 16:27:48,499 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/models.py changed, reloading.
+[INFO] 2025-02-17 16:27:54,148 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:35:51,146 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:37:18,378 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-17 16:37:21,377 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:38:02,655 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:41:10,940 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:44:13,740 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16470
+[INFO] 2025-02-17 16:44:14,132 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-17 16:44:20,793 django.server | "GET /admin/users/user/CkKaQlhnecfbOCx/change/ HTTP/1.1" 200 36848
+[INFO] 2025-02-17 16:44:21,335 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-17 16:46:57,714 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/enums/user.py changed, reloading.
+[INFO] 2025-02-17 16:47:01,650 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:50:15,751 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/enums/user.py changed, reloading.
+[INFO] 2025-02-17 16:50:18,494 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:52:30,355 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/models.py changed, reloading.
+[INFO] 2025-02-17 16:52:33,811 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:54:41,459 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 16:55:46,796 django.server | "GET /admin/users/user/CkKaQlhnecfbOCx/change/ HTTP/1.1" 200 37142
+[INFO] 2025-02-17 16:55:47,386 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-17 17:08:08,656 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-17 17:08:11,863 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 17:25:15,922 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-17 17:25:20,835 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 17:30:37,240 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-17 17:30:42,394 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 17:36:16,040 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-17 17:36:19,372 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 17:39:41,913 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-17 17:40:29,382 django.request | Unauthorized: /api/v1/user/
+[WARNING] 2025-02-17 17:40:29,384 django.server | "GET /api/v1/user/ HTTP/1.1" 401 58
+[INFO] 2025-02-17 17:48:28,984 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/configs/settings/base.py changed, reloading.
+[INFO] 2025-02-17 17:48:32,341 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 17:56:44,591 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 17:56:47,858 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 17:58:13,570 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-17 17:58:16,189 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-17 18:03:37,721 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:03:37,724 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:03:45,861 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:03:45,862 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:05:21,155 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:05:21,157 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:05:22,317 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:05:22,317 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:05:23,390 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:05:23,390 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:05:24,570 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:05:24,571 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:06:06,014 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:06:06,014 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[INFO] 2025-02-17 18:09:43,356 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 18:09:45,049 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 18:10:30,885 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 18:10:31,783 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 18:11:21,935 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 18:11:23,246 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-17 18:11:26,990 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:11:26,991 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[INFO] 2025-02-17 18:18:43,432 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-17 18:18:44,801 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 18:19:34,065 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 18:19:34,625 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 18:19:39,079 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-17 18:19:39,884 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-17 18:19:56,104 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:19:56,104 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:19:57,520 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:19:57,520 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:19:58,632 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:19:58,633 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:19:59,701 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:19:59,701 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:20:00,817 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:20:00,818 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:20:01,754 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:20:01,754 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:20:02,633 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:20:02,633 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-02-17 18:20:07,093 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-02-17 18:20:07,093 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[INFO] 2025-02-17 18:20:22,909 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-17 18:20:46,353 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-18 19:53:06,550 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-18 19:53:58,311 django.server | "GET /api/v1/user/ HTTP/1.1" 200 404
+[INFO] 2025-02-18 20:22:36,025 django.server | "GET /api/v1/user/ HTTP/1.1" 200 404
+[INFO] 2025-02-18 20:24:57,452 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-18 20:25:01,666 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-18 20:25:07,257 django.request | Unauthorized: /api/v1/user/
+[WARNING] 2025-02-18 20:25:07,260 django.server | "GET /api/v1/user/ HTTP/1.1" 401 183
+[INFO] 2025-02-18 20:25:20,311 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-18 20:25:32,648 django.server | "GET /api/v1/user/ HTTP/1.1" 200 328
+[INFO] 2025-02-19 12:56:52,522 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 13:00:08,477 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/urls.py changed, reloading.
+[INFO] 2025-02-19 13:00:12,492 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-19 13:00:23,795 django.request | Unauthorized: /api/v1/user/getUser/
+[WARNING] 2025-02-19 13:00:23,797 django.server | "GET /api/v1/user/getUser/ HTTP/1.1" 401 183
+[INFO] 2025-02-19 13:00:43,137 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-19 13:01:29,309 django.server | "GET /api/v1/user/getUser/ HTTP/1.1" 200 328
+[INFO] 2025-02-19 13:02:16,009 django.server | "GET /admin/users/user/CkKaQlhnecfbOCx/change/ HTTP/1.1" 200 37142
+[WARNING] 2025-02-19 13:02:27,071 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:02:27,082 django.server | "GET /ws/info?t=1739966546604 HTTP/1.1" 404 2339
+[WARNING] 2025-02-19 13:02:27,118 django.request | Not Found: /favicon.ico
+[WARNING] 2025-02-19 13:02:27,124 django.server | "GET /favicon.ico HTTP/1.1" 404 2335
+[INFO] 2025-02-19 13:05:24,856 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16470
+[INFO] 2025-02-19 13:05:25,271 django.server | "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,301 django.server | "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,316 django.server | "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,383 django.server | "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,392 django.server | "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,406 django.server | "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,415 django.server | "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,434 django.server | "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,513 django.server | "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,551 django.server | "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,581 django.server | "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,586 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-19 13:05:25,571 django.server | "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,558 django.server | "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,784 django.server | "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:25,788 django.server | "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:30,999 django.server | "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:31,100 django.server | "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:32,248 django.server | "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:32,268 django.server | "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:32,540 django.server | "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:32,718 django.server | "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:32,744 django.server | "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:05:33,201 django.server | "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[WARNING] 2025-02-19 13:05:34,355 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:05:34,361 django.server | "GET /ws/info?t=1739966734181 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 13:07:17,868 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37468
+[INFO] 2025-02-19 13:07:18,317 django.server | "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:18,340 django.server | "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:18,350 django.server | "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:18,366 django.server | "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:18,359 django.server | "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:18,407 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-19 13:07:18,613 django.server | "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:23,491 django.server | "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:24,161 django.server | "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:24,165 django.server | "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:24,166 django.server | "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:25,845 django.server | "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:26,258 django.server | "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:26,274 django.server | "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:26,331 django.server | "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+[INFO] 2025-02-19 13:07:26,370 django.server | "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+[WARNING] 2025-02-19 13:07:26,424 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:07:26,426 django.server | "GET /ws/info?t=1739966845933 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 13:09:27,643 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/urls.py changed, reloading.
+[INFO] 2025-02-19 13:09:32,047 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 13:14:21,537 django.server | "POST /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 302 0
+[INFO] 2025-02-19 13:14:23,250 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37768
+[INFO] 2025-02-19 13:14:24,086 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 13:14:29,222 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:14:29,230 django.server | "GET /ws/info?t=1739967268973 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 13:26:22,546 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/models.py changed, reloading.
+[INFO] 2025-02-19 13:26:27,439 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 13:40:47,671 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 13:40:55,874 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-19 13:41:03,538 django.request | Unauthorized: /api/v1/user/getUser/
+[WARNING] 2025-02-19 13:41:03,543 django.server | "GET /api/v1/user/getUser/ HTTP/1.1" 401 183
+[INFO] 2025-02-19 13:43:06,586 django.server | "POST /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 302 0
+[INFO] 2025-02-19 13:43:07,481 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37816
+[INFO] 2025-02-19 13:43:07,917 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 13:43:11,857 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:43:11,861 django.server | "GET /ws/info?t=1739968991775 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 13:43:20,034 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16487
+[INFO] 2025-02-19 13:43:20,340 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 13:43:22,680 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:43:22,684 django.server | "GET /ws/info?t=1739969002547 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 13:43:37,422 django.server | "POST /api/v1/auth/phone/ HTTP/1.1" 200 571
+[WARNING] 2025-02-19 13:45:16,708 django.request | Bad Request: /api/v1/user/addPhone/
+[WARNING] 2025-02-19 13:45:16,710 django.server | "POST /api/v1/user/addPhone/ HTTP/1.1" 400 37
+[INFO] 2025-02-19 13:50:35,966 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 13:50:45,480 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 13:52:39,686 apps.utils.helpers.verifications.termii | SMS sent successfully: {}
+[INFO] 2025-02-19 13:52:39,857 celery.app.trace | Task apps.users.tasks.send_otp_to_user[79721ebf-fc14-4627-ad9b-2320627c439f] succeeded in 1.7761927589999686s: None
+[INFO] 2025-02-19 13:52:39,863 django.server | "POST /api/v1/user/addPhone/ HTTP/1.1" 200 43
+[INFO] 2025-02-19 13:52:49,333 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37574
+[INFO] 2025-02-19 13:52:49,856 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 13:52:57,454 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 13:52:57,469 django.server | "GET /ws/info?t=1739969575549 HTTP/1.1" 404 2339
+[ERROR] 2025-02-19 13:53:12,443 django.request | Internal Server Error: /api/v1/user/addPhone/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: users_user.phone_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 20, in post
+    user.add_phone_number(phone_number)  # This triggers OTP in the background
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/models.py", line 141, in add_phone_number
+    self.save()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/models.py", line 171, in save
+    super().save(*args, **kwargs)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: users_user.phone_number
+[ERROR] 2025-02-19 13:53:12,562 django.server | "POST /api/v1/user/addPhone/ HTTP/1.1" 500 228289
+[INFO] 2025-02-19 14:00:06,730 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-19 14:00:12,242 django.request | Bad Request: /api/v1/user/addPhone/
+[WARNING] 2025-02-19 14:00:12,244 django.server | "POST /api/v1/user/addPhone/ HTTP/1.1" 400 40
+[INFO] 2025-02-19 14:00:23,694 django.server | "POST /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 302 0
+[INFO] 2025-02-19 14:00:24,928 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37806
+[INFO] 2025-02-19 14:00:25,459 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:00:29,083 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:00:29,085 django.server | "GET /ws/info?t=1739970029006 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:01:45,692 apps.utils.helpers.verifications.termii | SMS sent successfully: {}
+[INFO] 2025-02-19 14:01:45,951 celery.app.trace | Task apps.users.tasks.send_otp_to_user[b54a63a6-2162-4f86-a545-8c710fad5124] succeeded in 1.3489971600001809s: None
+[INFO] 2025-02-19 14:01:45,957 django.server | "POST /api/v1/user/addPhone/ HTTP/1.1" 200 43
+[INFO] 2025-02-19 14:01:53,222 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37574
+[INFO] 2025-02-19 14:01:53,398 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:01:56,674 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:01:56,677 django.server | "GET /ws/info?t=1739970116513 HTTP/1.1" 404 2339
+[WARNING] 2025-02-19 14:05:48,433 django.request | Unauthorized: /api/v1/user/verifyPhone/
+[WARNING] 2025-02-19 14:05:48,438 django.server | "GET /api/v1/user/verifyPhone/ HTTP/1.1" 401 58
+[INFO] 2025-02-19 14:06:30,982 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[WARNING] 2025-02-19 14:07:08,991 django.request | Bad Request: /api/v1/user/verifyPhone/
+[WARNING] 2025-02-19 14:07:08,993 django.server | "POST /api/v1/user/verifyPhone/ HTTP/1.1" 400 39
+[INFO] 2025-02-19 14:07:26,294 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37574
+[INFO] 2025-02-19 14:07:26,603 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:07:30,993 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:07:30,996 django.server | "GET /ws/info?t=1739970450947 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:07:45,704 django.server | "POST /api/v1/user/verifyPhone/ HTTP/1.1" 200 49
+[INFO] 2025-02-19 14:07:48,956 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37531
+[INFO] 2025-02-19 14:07:49,217 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:07:51,735 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:07:51,738 django.server | "GET /ws/info?t=1739970471584 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:08:36,652 django.server | "GET /api/v1/user/getUser/ HTTP/1.1" 200 364
+[WARNING] 2025-02-19 14:09:44,114 django.request | Bad Request: /api/v1/user/addEmail/
+[WARNING] 2025-02-19 14:09:44,116 django.server | "POST /api/v1/user/addEmail/ HTTP/1.1" 400 33
+[INFO] 2025-02-19 14:09:57,020 django.server | "POST /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 302 0
+[INFO] 2025-02-19 14:09:57,381 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37817
+[INFO] 2025-02-19 14:09:57,667 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:10:00,889 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:10:00,894 django.server | "GET /ws/info?t=1739970600749 HTTP/1.1" 404 2339
+[ERROR] 2025-02-19 14:10:07,958 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-19 14:10:08,208 celery.app.trace | Task apps.users.tasks.send_email_verification[29a2ab46-8323-4e3c-84aa-b7c1dc07554e] succeeded in 1.7179430380001577s: None
+[INFO] 2025-02-19 14:10:08,227 django.server | "POST /api/v1/user/addEmail/ HTTP/1.1" 200 36
+[INFO] 2025-02-19 14:10:44,666 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37582
+[INFO] 2025-02-19 14:10:44,982 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:10:47,957 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:10:47,962 django.server | "GET /ws/info?t=1739970647912 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:12:07,991 django.server | "POST /api/v1/user/verifyEmail/ HTTP/1.1" 200 42
+[INFO] 2025-02-19 14:12:15,181 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37539
+[INFO] 2025-02-19 14:12:15,484 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:12:18,212 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:12:18,216 django.server | "GET /ws/info?t=1739970738097 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:12:44,438 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16487
+[INFO] 2025-02-19 14:12:44,895 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:12:47,478 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:12:47,481 django.server | "GET /ws/info?t=1739970767312 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:12:51,249 django.server | "GET /admin/users/user/ltWKw3VQcGK0ZYY/change/ HTTP/1.1" 200 37213
+[INFO] 2025-02-19 14:12:52,016 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:12:55,316 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:12:55,320 django.server | "GET /ws/info?t=1739970775251 HTTP/1.1" 404 2339
+[ERROR] 2025-02-19 14:13:29,571 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-19 14:13:30,028 celery.app.trace | Task apps.users.tasks.send_email_verification[86dcf759-8dd1-48c3-82f6-3b3ed0b241c5] succeeded in 1.6355163889993491s: None
+[INFO] 2025-02-19 14:13:30,039 django.server | "POST /api/v1/auth/request-otp/ HTTP/1.1" 200 32
+[INFO] 2025-02-19 14:13:42,920 django.server | "GET /admin/users/user/ltWKw3VQcGK0ZYY/change/ HTTP/1.1" 200 37213
+[INFO] 2025-02-19 14:13:43,273 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:13:46,010 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:13:46,012 django.server | "GET /ws/info?t=1739970825932 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:13:52,347 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16487
+[INFO] 2025-02-19 14:13:52,664 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-19 14:13:55,280 django.request | Not Found: /ws/info
+[WARNING] 2025-02-19 14:13:55,282 django.server | "GET /ws/info?t=1739970835198 HTTP/1.1" 404 2339
+[INFO] 2025-02-19 14:29:33,197 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 14:29:38,735 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 14:36:37,012 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 14:36:40,861 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 14:42:35,810 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 14:42:44,137 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 14:43:13,719 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 14:43:20,868 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 14:43:56,167 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-19 14:45:07,909 django.server | "GET /api/v1/user/getUser/ HTTP/1.1" 200 480
+[INFO] 2025-02-19 14:49:17,280 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 14:49:28,948 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 14:49:55,692 django.server | "GET /api/v1/user/getUser/ HTTP/1.1" 200 424
+[INFO] 2025-02-19 14:51:31,638 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 14:51:37,654 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:03:04,482 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 15:03:10,736 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:03:19,307 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 15:03:25,809 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:14:35,095 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 15:14:40,708 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:15:58,082 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 15:16:03,271 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:27:26,283 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-19 15:27:29,909 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:28:12,141 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 15:28:15,781 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:29:05,254 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 15:29:09,376 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:30:10,391 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-19 15:30:14,482 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:30:24,411 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-19 15:30:29,153 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:32:47,867 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-19 15:32:52,558 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-19 15:34:25,272 django.request | Method Not Allowed: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:34:25,297 django.server | "GET /api/v1/auth/email/ HTTP/1.1" 405 40
+[WARNING] 2025-02-19 15:34:33,938 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:34:33,943 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:34:54,507 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:34:54,508 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[INFO] 2025-02-19 15:35:14,747 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-19 15:35:22,475 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-19 15:35:52,391 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-19 15:35:56,921 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-19 15:36:01,345 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:36:01,355 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:36:32,134 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:36:32,136 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:36:40,587 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:36:40,589 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:36:52,386 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:36:52,388 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:36:56,596 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:36:56,600 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:37:09,222 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:37:09,224 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:37:28,274 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:37:28,277 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:37:35,368 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:37:35,370 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:37:38,575 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-19 15:37:38,577 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 40
+[WARNING] 2025-02-19 15:39:26,149 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:39:26,153 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:39:29,863 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:39:29,866 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:40:30,422 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:40:30,425 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:40:33,619 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:40:33,621 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:40:38,849 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:40:38,851 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:40:42,732 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:40:42,734 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:40:58,729 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:40:58,732 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:41:53,399 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:41:53,405 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[WARNING] 2025-02-19 15:41:57,009 django.request | Unauthorized: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 15:41:57,013 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 401 58
+[INFO] 2025-02-19 15:43:51,153 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-19 15:43:57,232 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-19 15:44:06,725 django.request | Internal Server Error: /api/v1/auth/passwordReset/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py", line 99, in post
+    user = User.objects.filter(Q(email=email) | Q(profile__phone_number=phone_number)).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'profile' into field. Choices are: avatar, bvn, date_joined, email, first_name, groups, id, is_active, is_bvn_verified, is_email_verified, is_nin_verified, is_phone_number_verified, is_staff, is_superuser, is_user_identity_verified, last_login, last_name, logentry, middle_name, nin, otp, otp_expiration, outstandingtoken, owned_restaurant, password, phone_number, pin, restaurant, restaurant_id, role, user_permissions, user_session, wallet_balance
+[ERROR] 2025-02-19 15:44:06,797 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 500 177435
+[INFO] 2025-02-19 15:44:53,120 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-19 15:45:00,220 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-19 15:45:11,299 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-19 15:45:11,782 celery.app.trace | Task apps.users.tasks.send_email_verification[5f5eaf41-76be-4d51-a835-74c789426504] succeeded in 1.5780917650008632s: None
+[INFO] 2025-02-19 15:45:11,840 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 200 50
+[WARNING] 2025-02-19 16:11:51,463 django.request | Bad Request: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 16:11:51,480 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 400 39
+[WARNING] 2025-02-19 16:13:32,477 django.request | Bad Request: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 16:13:32,486 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 400 39
+[WARNING] 2025-02-19 16:14:05,851 django.request | Bad Request: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-19 16:14:05,853 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 400 39
+[INFO] 2025-02-24 15:08:20,600 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-24 15:08:27,463 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-02-24 15:08:27,637 celery.app.trace | Task apps.users.tasks.send_email_verification[c8c83c59-0e76-4ac3-8982-7c1957b091ab] succeeded in 1.4840113089994702s: None
+[INFO] 2025-02-24 15:08:27,649 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 200 50
+[INFO] 2025-02-24 15:08:39,234 django.server | "GET /admin/ HTTP/1.1" 200 13902
+[INFO] 2025-02-24 15:08:39,559 django.server | "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:39,571 django.server | "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:39,573 django.server | "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:39,625 django.server | "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+[INFO] 2025-02-24 15:08:39,626 django.server | "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+[INFO] 2025-02-24 15:08:44,616 django.server | "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:44,618 django.server | "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:45,197 django.server | "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:45,222 django.server | "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:45,225 django.server | "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[WARNING] 2025-02-24 15:08:47,726 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:08:47,736 django.request | Not Found: /favicon.ico
+[WARNING] 2025-02-24 15:08:47,738 django.server | "GET /ws/info?t=1740406127458 HTTP/1.1" 404 2339
+[WARNING] 2025-02-24 15:08:47,756 django.server | "GET /favicon.ico HTTP/1.1" 404 2335
+[INFO] 2025-02-24 15:08:57,402 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16487
+[INFO] 2025-02-24 15:08:57,662 django.server | "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,668 django.server | "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,674 django.server | "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,680 django.server | "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,685 django.server | "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,701 django.server | "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,711 django.server | "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO] 2025-02-24 15:08:57,738 django.server | "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,755 django.server | "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO] 2025-02-24 15:08:57,750 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-24 15:08:57,805 django.server | "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:57,809 django.server | "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:59,273 django.server | "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:59,308 django.server | "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:59,669 django.server | "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:59,671 django.server | "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:08:59,673 django.server | "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[WARNING] 2025-02-24 15:09:00,217 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:09:00,221 django.server | "GET /ws/info?t=1740406140120 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 15:09:02,467 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37590
+[INFO] 2025-02-24 15:09:02,702 django.server | "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:02,703 django.server | "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:02,707 django.server | "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:02,715 django.server | "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+[INFO] 2025-02-24 15:09:02,720 django.server | "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[INFO] 2025-02-24 15:09:02,740 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-02-24 15:09:02,818 django.server | "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:04,755 django.server | "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:04,756 django.server | "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:06,149 django.server | "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:06,183 django.server | "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:06,281 django.server | "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:06,308 django.server | "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[INFO] 2025-02-24 15:09:06,317 django.server | "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[WARNING] 2025-02-24 15:09:06,639 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:09:06,642 django.server | "GET /ws/info?t=1740406146542 HTTP/1.1" 404 2339
+[WARNING] 2025-02-24 15:09:23,080 django.request | Bad Request: /api/v1/auth/passwordReset/
+[WARNING] 2025-02-24 15:09:23,083 django.server | "POST /api/v1/auth/passwordReset/ HTTP/1.1" 400 39
+[WARNING] 2025-02-24 15:09:45,656 django.request | Bad Request: /api/v1/auth/comfirmReset/
+[WARNING] 2025-02-24 15:09:45,659 django.server | "POST /api/v1/auth/comfirmReset/ HTTP/1.1" 400 78
+[WARNING] 2025-02-24 15:10:36,054 django.request | Bad Request: /api/v1/auth/comfirmReset/
+[WARNING] 2025-02-24 15:10:36,056 django.server | "POST /api/v1/auth/comfirmReset/ HTTP/1.1" 400 71
+[ERROR] 2025-02-24 15:11:08,152 django.request | Internal Server Error: /api/v1/auth/comfirmReset/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py", line 131, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py", line 138, in validate
+    user = User.objects.filter(Q(email=email) | Q(profile__phone_number=phone_number)).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'profile' into field. Choices are: avatar, bvn, date_joined, email, first_name, groups, id, is_active, is_bvn_verified, is_email_verified, is_nin_verified, is_phone_number_verified, is_staff, is_superuser, is_user_identity_verified, last_login, last_name, logentry, middle_name, nin, otp, otp_expiration, outstandingtoken, owned_restaurant, password, phone_number, pin, restaurant, restaurant_id, role, user_permissions, user_session, wallet_balance
+[ERROR] 2025-02-24 15:11:08,170 django.server | "POST /api/v1/auth/comfirmReset/ HTTP/1.1" 500 190909
+[INFO] 2025-02-24 15:11:30,611 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-24 15:11:35,157 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:11:40,277 django.server | "POST /api/v1/auth/comfirmReset/ HTTP/1.1" 200 41
+[INFO] 2025-02-24 15:11:46,835 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-24 15:11:49,870 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:13:56,047 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-02-24 15:14:00,565 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:26:25,987 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py changed, reloading.
+[INFO] 2025-02-24 15:26:29,078 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:27:01,024 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 15:27:04,545 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:27:55,241 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-24 15:27:58,202 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:28:06,991 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-24 15:28:10,099 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:28:34,898 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/urls.py changed, reloading.
+[INFO] 2025-02-24 15:28:38,550 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:29:00,280 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/urls.py changed, reloading.
+[INFO] 2025-02-24 15:29:03,532 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 15:30:22,081 django.request | Not Found: /api/v1/auth/changePassword/
+[WARNING] 2025-02-24 15:30:22,083 django.server | "POST /api/v1/auth/changePassword/ HTTP/1.1" 404 3624
+[WARNING] 2025-02-24 15:30:40,040 django.request | Unauthorized: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 15:30:40,041 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 401 58
+[ERROR] 2025-02-24 15:30:50,661 django.request | Internal Server Error: /api/v1/auth/email/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py", line 72, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py", line 88, in validate
+    user = authenticate(email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py", line 10, in authenticate
+    user = UserModel.objects.get(phone_number=phone_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+apps.users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[ERROR] 2025-02-24 15:30:50,684 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 500 152074
+[INFO] 2025-02-24 15:31:04,347 django.server | "GET /admin/users/user/ HTTP/1.1" 302 0
+[INFO] 2025-02-24 15:31:04,510 django.server | "GET /admin/login/?next=/admin/users/user/ HTTP/1.1" 200 4180
+[WARNING] 2025-02-24 15:31:07,298 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:31:07,301 django.server | "GET /ws/info?t=1740407467258 HTTP/1.1" 404 2339
+[ERROR] 2025-02-24 15:31:12,971 django.request | Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 328, in full_clean
+    self._clean_form()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 349, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/forms.py", line 252, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py", line 10, in authenticate
+    user = UserModel.objects.get(phone_number=phone_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+apps.users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[ERROR] 2025-02-24 15:31:13,001 django.server | "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 500 203584
+[WARNING] 2025-02-24 15:31:15,918 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:31:15,920 django.server | "GET /ws/info?t=1740407475877 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 15:35:17,705 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:36:00,982 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[ERROR] 2025-02-24 15:36:15,518 django.request | Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 328, in full_clean
+    self._clean_form()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 349, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/forms.py", line 252, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py", line 10, in authenticate
+    user = UserModel.objects.get(phone_number=phone_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+apps.users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[ERROR] 2025-02-24 15:36:15,530 django.server | "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 500 203584
+[WARNING] 2025-02-24 15:36:17,969 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:36:17,970 django.server | "GET /ws/info?t=1740407777901 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 15:36:21,323 django.server | "GET /admin/login/?next=/admin/users/user/ HTTP/1.1" 200 4180
+[WARNING] 2025-02-24 15:36:23,427 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:36:23,430 django.server | "GET /ws/info?t=1740407783329 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 15:36:30,038 django.server | "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 302 0
+[INFO] 2025-02-24 15:36:30,212 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16487
+[INFO] 2025-02-24 15:36:30,394 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-24 15:36:32,338 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 15:36:32,341 django.server | "GET /ws/info?t=1740407792198 HTTP/1.1" 404 2339
+[WARNING] 2025-02-24 15:37:12,418 django.request | Unauthorized: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 15:37:12,420 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 401 183
+[WARNING] 2025-02-24 15:37:18,265 django.request | Unauthorized: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 15:37:18,266 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 401 183
+[WARNING] 2025-02-24 15:37:20,778 django.request | Unauthorized: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 15:37:20,781 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 401 183
+[WARNING] 2025-02-24 15:37:27,301 django.request | Unauthorized: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 15:37:27,303 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 401 183
+[INFO] 2025-02-24 15:37:39,976 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[WARNING] 2025-02-24 15:38:02,203 django.request | Bad Request: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 15:38:02,205 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 400 138
+[ERROR] 2025-02-24 15:38:55,438 django.request | Internal Server Error: /api/v1/user/changePassword/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 130, in post
+    user_validate_data.validate_password(new_password, user)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'user_validate_data' has no attribute 'validate_password'. Did you mean: 'validate_passwords'?
+[ERROR] 2025-02-24 15:38:55,449 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 500 116319
+[INFO] 2025-02-24 15:39:20,784 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 15:39:24,534 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-24 15:39:34,425 django.request | Internal Server Error: /api/v1/user/changePassword/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 130, in post
+    user_validate_data.validate_passwords(new_password, user)
+TypeError: user_validate_data.validate_passwords() takes 1 positional argument but 2 were given
+[ERROR] 2025-02-24 15:39:34,433 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 500 116293
+[INFO] 2025-02-24 15:39:51,680 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 15:39:54,914 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-24 15:40:04,025 django.request | Internal Server Error: /api/v1/user/changePassword/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 130, in post
+    user_validate_data.validate_passwords(new_password)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py", line 140, in validate_passwords
+    password = self.data.get('password')
+               ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'data'
+[ERROR] 2025-02-24 15:40:04,035 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 500 119891
+[INFO] 2025-02-24 15:41:28,939 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py changed, reloading.
+[INFO] 2025-02-24 15:41:31,865 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-24 15:41:40,742 django.request | Internal Server Error: /api/v1/user/changePassword/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 130, in post
+    user_validate_data.validate_passwords(new_password)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py", line 140, in validate_passwords
+    password = data.get('password')
+               ^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[ERROR] 2025-02-24 15:41:40,760 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 500 119872
+[INFO] 2025-02-24 15:47:23,798 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py changed, reloading.
+[INFO] 2025-02-24 15:47:27,851 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-24 15:47:49,530 django.request | Internal Server Error: /api/v1/user/changePassword/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 130, in post
+    user_validate_data.validate_passwords(new_password)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py", line 140, in validate_passwords
+    password = data.get('new_password')
+               ^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[ERROR] 2025-02-24 15:47:49,539 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 500 119884
+[INFO] 2025-02-24 15:59:35,440 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py changed, reloading.
+[INFO] 2025-02-24 15:59:40,513 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 15:59:45,276 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-24 15:59:48,422 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 16:00:02,181 django.request | Bad Request: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 16:00:02,183 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 400 73
+[WARNING] 2025-02-24 16:00:17,143 django.request | Bad Request: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 16:00:17,146 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 400 137
+[WARNING] 2025-02-24 16:00:40,006 django.request | Bad Request: /api/v1/user/changePassword/
+[WARNING] 2025-02-24 16:00:40,008 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 400 50
+[INFO] 2025-02-24 16:00:55,742 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 200 43
+[INFO] 2025-02-24 16:13:36,585 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:13:43,315 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 16:14:47,356 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/urls.py changed, reloading.
+[INFO] 2025-02-24 16:14:51,284 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 16:15:20,912 django.request | Unauthorized: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:15:20,915 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 401 58
+[WARNING] 2025-02-24 16:15:30,919 django.request | Unauthorized: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:15:30,924 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 401 183
+[ERROR] 2025-02-24 16:15:43,579 django.request | Internal Server Error: /api/v1/auth/email/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py", line 72, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py", line 88, in validate
+    user = authenticate(email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py", line 10, in authenticate
+    user = UserModel.objects.get(phone_number=phone_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+apps.users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[ERROR] 2025-02-24 16:15:43,617 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 500 152024
+[INFO] 2025-02-24 16:15:54,900 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[ERROR] 2025-02-24 16:16:20,554 django.request | Internal Server Error: /api/v1/user/addBVN/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 76, in post
+    user = User.objects.get(id=user_id)
+                               ^^^^^^^
+NameError: name 'user_id' is not defined
+[ERROR] 2025-02-24 16:16:20,570 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 500 114862
+[INFO] 2025-02-24 16:16:47,570 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:16:52,419 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 16:17:00,032 django.request | Bad Request: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:17:00,037 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 400 31
+[INFO] 2025-02-24 16:17:32,233 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:17:36,050 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 16:17:41,040 django.request | Bad Request: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:17:41,045 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 400 31
+[WARNING] 2025-02-24 16:17:46,179 django.request | Bad Request: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:17:46,182 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 400 31
+[INFO] 2025-02-24 16:18:16,831 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:18:20,247 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 16:18:25,260 django.request | Bad Request: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:18:25,263 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 400 25
+[WARNING] 2025-02-24 16:18:46,356 django.request | Bad Request: /api/v1/user/addBVN/
+[WARNING] 2025-02-24 16:18:46,358 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 400 52
+[INFO] 2025-02-24 16:18:52,690 celery.app.trace | Task apps.users.tasks.verify_user_identity[4816bcbf-7027-42fc-949b-87d677c48f19] succeeded in 0.2544509660001495s: None
+[INFO] 2025-02-24 16:18:52,700 django.server | "POST /api/v1/user/addBVN/ HTTP/1.1" 200 45
+[INFO] 2025-02-24 16:21:21,097 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:21:23,681 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 16:22:01,854 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:22:05,805 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 16:22:18,534 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/urls.py changed, reloading.
+[INFO] 2025-02-24 16:22:22,339 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 16:23:40,980 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/urls.py changed, reloading.
+[INFO] 2025-02-24 16:23:45,025 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-24 16:24:41,651 django.request | Method Not Allowed: /api/v1/user/editAvatar/
+[WARNING] 2025-02-24 16:24:41,656 django.server | "GET /api/v1/user/editAvatar/ HTTP/1.1" 405 40
+[ERROR] 2025-02-24 16:24:48,402 django.request | Internal Server Error: /api/v1/user/editAvatar/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py", line 122, in post
+    errors = user_validate_data.validate_user_avatar(request.data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py", line 86, in validate_user_avatar
+    if avatar and not re.match(r'\.(jpg|jpeg|png|gif)$', avatar):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/re/__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'InMemoryUploadedFile'
+[ERROR] 2025-02-24 16:24:48,416 django.server | "POST /api/v1/user/editAvatar/ HTTP/1.1" 500 124000
+[INFO] 2025-02-24 16:27:40,724 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/validators.py changed, reloading.
+[INFO] 2025-02-24 16:27:43,950 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 16:28:10,798 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:28:15,504 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-24 16:30:22,945 django.server | "POST /api/v1/user/editAvatar/ HTTP/1.1" 200 42
+[INFO] 2025-02-24 16:30:28,857 django.server | "GET /admin/users/user/ HTTP/1.1" 302 0
+[INFO] 2025-02-24 16:30:29,223 django.server | "GET /admin/login/?next=/admin/users/user/ HTTP/1.1" 200 4180
+[INFO] 2025-02-24 16:30:29,606 django.server | "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[WARNING] 2025-02-24 16:30:35,107 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 16:30:35,112 django.server | "GET /ws/info?t=1740411034963 HTTP/1.1" 404 2339
+[ERROR] 2025-02-24 16:30:39,491 django.request | Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 328, in full_clean
+    self._clean_form()
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/forms/forms.py", line 349, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/forms.py", line 252, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py", line 10, in authenticate
+    user = UserModel.objects.get(phone_number=phone_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+apps.users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[ERROR] 2025-02-24 16:30:39,520 django.server | "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 500 203584
+[WARNING] 2025-02-24 16:30:43,467 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 16:30:43,469 django.server | "GET /ws/info?t=1740411043383 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 16:30:48,228 django.server | "GET /admin/login/?next=/admin/users/user/ HTTP/1.1" 200 4180
+[WARNING] 2025-02-24 16:30:51,283 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 16:30:51,287 django.server | "GET /ws/info?t=1740411051175 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 16:31:28,035 django.server | "POST /api/v1/user/changePassword/ HTTP/1.1" 200 43
+[INFO] 2025-02-24 16:31:42,087 django.server | "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 302 0
+[INFO] 2025-02-24 16:31:42,499 django.server | "GET /admin/users/user/ HTTP/1.1" 200 16487
+[INFO] 2025-02-24 16:31:43,064 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-24 16:31:47,641 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 16:31:47,646 django.server | "GET /ws/info?t=1740411107478 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 16:31:53,714 django.server | "GET /admin/users/user/b0b879e3cdb04255939ce55a26b02212/change/ HTTP/1.1" 200 37813
+[INFO] 2025-02-24 16:31:53,927 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-02-24 16:31:58,575 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 16:31:58,581 django.server | "GET /ws/info?t=1740411118071 HTTP/1.1" 404 2339
+[WARNING] 2025-02-24 16:32:04,245 django.request | Not Found: /avatars/20250223_085817.jpg
+[WARNING] 2025-02-24 16:32:04,257 django.server | "GET /avatars/20250223_085817.jpg HTTP/1.1" 404 2383
+[WARNING] 2025-02-24 16:32:07,870 django.request | Not Found: /ws/info
+[WARNING] 2025-02-24 16:32:07,877 django.server | "GET /ws/info?t=1740411127753 HTTP/1.1" 404 2339
+[INFO] 2025-02-24 16:36:50,144 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/userViews/accountViews.py changed, reloading.
+[INFO] 2025-02-24 16:36:54,052 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 13:58:40,043 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-25 13:58:48,760 django.request | Unauthorized: /api/v1/wallet/getBanks/
+[WARNING] 2025-02-25 13:58:48,763 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 401 58
+[ERROR] 2025-02-25 13:59:38,938 django.request | Internal Server Error: /api/v1/auth/email/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/views.py", line 72, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py", line 87, in validate
+    user = authenticate(email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py", line 10, in authenticate
+    user = UserModel.objects.get(phone_number=phone_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/Zplit/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+apps.users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[ERROR] 2025-02-25 13:59:38,957 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 500 152044
+[INFO] 2025-02-25 14:02:29,341 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/backends.py changed, reloading.
+[INFO] 2025-02-25 14:02:32,658 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-25 14:02:52,250 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-25 14:02:52,252 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 45
+[INFO] 2025-02-25 14:05:34,291 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-02-25 14:05:37,871 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-25 14:05:51,032 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-02-25 14:05:51,034 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[INFO] 2025-02-25 14:06:07,002 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-25 14:06:27,945 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 200 63
+[INFO] 2025-02-25 14:15:20,713 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:15:25,202 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:15:29,330 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 200 63
+[INFO] 2025-02-25 14:19:20,525 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:19:23,611 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:19:32,914 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/wallet/views.py changed, reloading.
+[INFO] 2025-02-25 14:19:35,654 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:19:41,351 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 200 12
+[INFO] 2025-02-25 14:20:17,466 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:20:20,150 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:20:24,641 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 200 12
+[INFO] 2025-02-25 14:20:32,678 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:20:35,618 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-25 14:24:56,574 django.request | Internal Server Error: /api/v1/wallet/getBanks/
+[ERROR] 2025-02-25 14:24:56,582 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 500 90
+[INFO] 2025-02-25 14:29:15,593 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:29:19,838 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:29:28,085 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/wallet/views.py changed, reloading.
+[INFO] 2025-02-25 14:29:31,148 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-02-25 14:29:37,599 django.request | Internal Server Error: /api/v1/wallet/getBanks/
+[ERROR] 2025-02-25 14:29:37,601 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 500 57
+[INFO] 2025-02-25 14:30:46,027 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:30:49,273 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:32:38,645 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:32:42,532 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:32:50,315 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 200 44
+[INFO] 2025-02-25 14:32:58,595 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:33:02,102 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:33:07,426 django.server | "GET /api/v1/wallet/getBanks/ HTTP/1.1" 200 63038
+[INFO] 2025-02-25 14:44:17,965 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/wallet/views.py changed, reloading.
+[INFO] 2025-02-25 14:44:21,794 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-02-25 14:44:45,105 django.request | Unauthorized: /api/v1/wallet/getBanks/
+[WARNING] 2025-02-25 14:44:45,107 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank HTTP/1.1" 401 183
+[INFO] 2025-02-25 14:44:54,558 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 571
+[INFO] 2025-02-25 14:45:09,768 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank HTTP/1.1" 200 63038
+[ERROR] 2025-02-25 14:45:26,832 django.request | Internal Server Error: /api/v1/wallet/getBanks/
+[ERROR] 2025-02-25 14:45:26,836 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 500 87
+[INFO] 2025-02-25 14:45:43,101 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:45:45,819 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:45:52,142 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 200 63038
+[INFO] 2025-02-25 14:46:42,743 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:46:46,975 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:46:50,779 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 200 63038
+[INFO] 2025-02-25 14:47:09,497 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 200 63038
+[INFO] 2025-02-25 14:47:18,071 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank HTTP/1.1" 200 63038
+[INFO] 2025-02-25 14:50:25,297 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/wallet/views.py changed, reloading.
+[INFO] 2025-02-25 14:50:31,076 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:50:36,761 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 200 63038
+[INFO] 2025-02-25 14:56:24,170 django.utils.autoreload | /home/aftersnow/Dev Station/Zplit/main/configs/apps/utils/helpers/payments/paystack.py changed, reloading.
+[INFO] 2025-02-25 14:56:28,333 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-02-25 14:56:38,499 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 200 992
+[INFO] 2025-03-03 14:02:58,125 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 14:36:32,118 django.utils.autoreload | Watching for file changes with StatReloader

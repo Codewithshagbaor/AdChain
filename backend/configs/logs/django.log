@@ -1468,3 +1468,948 @@ apps.users.models.User.MultipleObjectsReturned: get() returned more than one Use
 [INFO] 2025-02-25 14:56:38,499 django.server | "GET /api/v1/wallet/getBanks/?pay_with_bank=True HTTP/1.1" 200 992
 [INFO] 2025-03-03 14:02:58,125 django.utils.autoreload | Watching for file changes with StatReloader
 [INFO] 2025-03-14 14:36:32,118 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 16:04:00,227 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 16:04:12,489 django.request | Internal Server Error: /api/v1/auth/email/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py", line 72, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py", line 83, in validate
+    user = authenticate(email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/contrib/auth/__init__.py", line 23, in load_backend
+    return import_string(path)()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps.users.backends'
+[ERROR] 2025-03-14 16:04:12,547 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 500 164374
+[WARNING] 2025-03-14 16:05:47,158 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:05:47,166 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[ERROR] 2025-03-14 16:07:54,987 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:07:55,534 celery.app.trace | Task apps.users.tasks.send_email_verification[0c9dcd35-26f9-423f-9c63-4b97d8ac5c32] succeeded in 1.9617275620039436s: None
+[INFO] 2025-03-14 16:07:55,546 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 59
+[WARNING] 2025-03-14 16:08:18,503 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-14 16:08:18,509 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 27
+[ERROR] 2025-03-14 16:08:32,184 django.request | Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py", line 22, in post
+    send_otp_to_user.delay(user.id, channel)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/trace.py", line 470, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/tasks.py", line 11, in send_otp_to_user
+    OTPVerifyHandler(user, contact, channel).verify_send_otp()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/utils/helpers/verifications/__init__.py", line 21, in __init__
+    self._contact = self.format_phone_number(contact)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/utils/helpers/verifications/__init__.py", line 13, in format_phone_number
+    phone_no = phone_no.strip()
+               ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+[ERROR] 2025-03-14 16:08:32,256 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 500 176620
+[WARNING] 2025-03-14 16:08:52,860 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-14 16:08:52,866 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-14 16:09:19,021 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:09:19,041 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[WARNING] 2025-03-14 16:10:03,797 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:10:03,801 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[WARNING] 2025-03-14 16:11:05,161 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-14 16:11:05,167 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-14 16:11:33,554 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:11:33,557 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[WARNING] 2025-03-14 16:12:27,974 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:12:27,976 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[INFO] 2025-03-14 16:15:45,513 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 16:16:35,769 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:16:36,219 celery.app.trace | Task apps.users.tasks.send_email_verification[94a65dbd-71b6-49c5-bfdf-05fcefbbeea2] succeeded in 1.753529574998538s: None
+[INFO] 2025-03-14 16:16:36,228 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 59
+[WARNING] 2025-03-14 16:17:37,920 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:17:37,924 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[WARNING] 2025-03-14 16:19:07,664 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:19:07,669 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[WARNING] 2025-03-14 16:19:53,627 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:19:53,630 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[INFO] 2025-03-14 16:21:19,069 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-14 16:21:26,715 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 16:21:47,539 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-03-14 16:21:51,413 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-14 16:22:10,438 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:22:10,441 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[INFO] 2025-03-14 16:25:43,638 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/models.py changed, reloading.
+[INFO] 2025-03-14 16:27:38,051 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 16:27:47,361 django.request | Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py", line 16, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 495, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 1202, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'pin' was included on serializer UserSerializer in the 'exclude' option, but does not match any model field.
+[ERROR] 2025-03-14 16:27:47,392 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 500 161987
+[INFO] 2025-03-14 16:29:44,470 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-14 16:29:48,877 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 16:30:09,560 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:30:10,261 celery.app.trace | Task apps.users.tasks.send_email_verification[af4b8167-675b-4e7a-a615-3ea1d228cc4b] succeeded in 2.2891717790043913s: None
+[INFO] 2025-03-14 16:30:10,281 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 59
+[WARNING] 2025-03-14 16:30:33,232 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:30:33,235 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[WARNING] 2025-03-14 16:33:27,717 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:33:27,721 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 45
+[INFO] 2025-03-14 16:34:01,009 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-14 16:34:07,256 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 16:34:24,307 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-14 16:34:28,761 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 16:35:01,288 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 16:35:21,422 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:35:21,765 celery.app.trace | Task apps.users.tasks.send_email_verification[4fa55c02-ab7d-4720-b093-c8ec6462dc69] succeeded in 1.771560426997894s: None
+[INFO] 2025-03-14 16:35:21,782 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 59
+[INFO] 2025-03-14 16:37:34,096 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-03-14 16:37:40,478 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-14 16:38:10,840 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:38:10,843 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[INFO] 2025-03-14 16:39:13,040 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-03-14 16:39:18,795 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 16:40:42,216 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 16:40:53,489 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:40:53,753 celery.app.trace | Task apps.users.tasks.send_email_verification[9750e7c4-5dff-4044-8e02-8dc6446ac38f] succeeded in 1.475014186995395s: None
+[INFO] 2025-03-14 16:40:53,769 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 59
+[WARNING] 2025-03-14 16:41:59,788 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:41:59,811 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 34
+[INFO] 2025-03-14 16:48:09,243 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/configs/settings/base.py changed, reloading.
+[INFO] 2025-03-14 16:48:16,274 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-14 16:48:38,279 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-14 16:48:38,283 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[INFO] 2025-03-14 16:49:09,285 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-14 16:49:30,523 django.request | Not Found: /api/v1/token/
+[WARNING] 2025-03-14 16:49:30,527 django.server | "GET /api/v1/token/ HTTP/1.1" 404 2455
+[WARNING] 2025-03-14 16:49:37,713 django.request | Not Found: /favicon.ico
+[WARNING] 2025-03-14 16:49:37,718 django.server | "GET /favicon.ico HTTP/1.1" 404 2449
+[WARNING] 2025-03-14 16:49:45,040 django.request | Method Not Allowed: /api/v1/auth/register/
+[WARNING] 2025-03-14 16:49:45,045 django.server | "GET /api/v1/auth/register/ HTTP/1.1" 405 5644
+[INFO] 2025-03-14 16:49:45,591 django.server | "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:45,603 django.server | "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[INFO] 2025-03-14 16:49:45,616 django.server | "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:45,612 django.server | "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[INFO] 2025-03-14 16:49:45,612 django.server | "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[INFO] 2025-03-14 16:49:45,611 django.server | "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[INFO] 2025-03-14 16:49:45,645 django.server | "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:45,658 django.server | "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:45,697 django.server | "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:45,702 django.server | "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:45,712 django.server | "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-03-14 16:49:47,233 django.server | "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[ERROR] 2025-03-14 16:50:01,326 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:50:01,536 celery.app.trace | Task apps.users.tasks.send_email_verification[eb4ba53d-d968-4bd9-836a-56035c13c669] succeeded in 2.002350533999561s: None
+[INFO] 2025-03-14 16:50:01,560 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 5643
+[WARNING] 2025-03-14 16:50:24,816 django.request | Method Not Allowed: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:50:24,818 django.server | "GET /api/v1/auth/email/ HTTP/1.1" 405 5602
+[WARNING] 2025-03-14 16:50:45,863 django.request | Bad Request: /api/v1/auth/email/
+[WARNING] 2025-03-14 16:50:45,865 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 400 5594
+[INFO] 2025-03-14 16:51:49,003 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-14 16:51:57,036 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 16:53:31,802 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-14 16:54:32,832 django.request | Method Not Allowed: /api/v1/auth/register/
+[WARNING] 2025-03-14 16:54:32,835 django.server | "GET /api/v1/auth/register/ HTTP/1.1" 405 5644
+[ERROR] 2025-03-14 16:54:50,203 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 16:54:50,594 celery.app.trace | Task apps.users.tasks.send_email_verification[f0fee251-b1c5-4d23-b53e-5dfd6a0bbeea] succeeded in 2.0602279199956683s: None
+[INFO] 2025-03-14 16:54:50,658 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 5643
+[INFO] 2025-03-14 17:01:05,636 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-14 17:01:13,972 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 17:01:55,499 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-03-14 17:02:13,186 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-14 17:02:13,563 celery.app.trace | Task apps.users.tasks.send_email_verification[9078a0f0-f283-4417-9ea4-ad61e19f3ddd] succeeded in 1.8178974609982106s: None
+[INFO] 2025-03-14 17:02:13,572 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 59
+[INFO] 2025-03-14 17:02:53,088 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 526
+[INFO] 2025-03-14 17:12:19,409 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-03-14 17:12:27,074 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-14 17:12:48,362 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-15 15:33:58,462 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-15 16:32:54,834 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-15 16:33:13,263 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-15 16:35:00,355 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-15 16:36:42,894 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-15 16:37:06,489 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-15 16:37:10,171 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-15 16:37:12,307 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-15 16:37:58,545 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-15 16:39:01,404 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-16 10:06:08,915 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-03-16 10:06:15,497 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-16 10:49:34,572 django.request | Method Not Allowed: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:49:34,589 django.server | "GET /api/v1/auth/register/ HTTP/1.1" 405 5644
+[WARNING] 2025-03-16 10:49:44,504 django.request | Not Found: /favicon.ico
+[WARNING] 2025-03-16 10:49:44,507 django.server | "GET /favicon.ico HTTP/1.1" 404 2449
+[INFO] 2025-03-16 10:52:07,730 django.server | "OPTIONS /api/v1/auth/register/ HTTP/1.1" 200 0
+[WARNING] 2025-03-16 10:52:07,890 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:52:07,892 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 10:52:13,480 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:52:13,482 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 10:54:42,862 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:54:42,949 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 10:55:12,616 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:55:12,619 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 10:55:43,693 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:55:43,696 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 10:56:04,016 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 10:56:04,018 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[INFO] 2025-03-16 11:02:23,154 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py changed, reloading.
+[INFO] 2025-03-16 11:02:28,383 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-16 11:03:06,093 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:03:06,095 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:03:09,281 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:03:09,283 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:03:15,332 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:03:15,334 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:03:16,867 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:03:16,870 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:03:17,909 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:03:17,913 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:04:44,101 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:04:44,103 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 5652
+[WARNING] 2025-03-16 11:05:00,701 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:05:00,702 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:07:08,291 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:07:08,308 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:07:13,210 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:07:13,212 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:07:29,128 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:07:29,131 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:07:54,239 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:07:54,243 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:07:56,033 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:07:56,037 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:08:05,165 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:08:05,167 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[WARNING] 2025-03-16 11:15:15,156 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:15:15,167 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[ERROR] 2025-03-16 11:15:32,038 django.request | Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py", line 22, in post
+    send_otp_to_user.delay(user.id, channel)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/trace.py", line 470, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/tasks.py", line 11, in send_otp_to_user
+    OTPVerifyHandler(user, contact, channel).verify_send_otp()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/utils/helpers/verifications/__init__.py", line 21, in __init__
+    self._contact = self.format_phone_number(contact)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/utils/helpers/verifications/__init__.py", line 13, in format_phone_number
+    phone_no = phone_no.strip()
+               ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+[ERROR] 2025-03-16 11:15:32,056 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 500 178174
+[WARNING] 2025-03-16 11:16:52,480 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:16:52,482 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[ERROR] 2025-03-16 11:17:05,119 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-16 11:17:05,261 celery.app.trace | Task apps.users.tasks.send_email_verification[5effe34a-8b33-48f1-83ea-d07c6121c2d8] succeeded in 1.5819576169997163s: None
+[ERROR] 2025-03-16 11:17:05,385 django.request | Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/views.py", line 24, in post
+    tokens = serializer.get_tokens_for_user(user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'UserSerializer' object has no attribute 'get_tokens_for_user'
+[ERROR] 2025-03-16 11:17:05,404 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 500 118549
+[INFO] 2025-03-16 11:17:48,881 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/users/serializers.py changed, reloading.
+[INFO] 2025-03-16 11:17:52,360 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-16 11:17:55,178 django.request | Bad Request: /api/v1/auth/register/
+[WARNING] 2025-03-16 11:17:55,182 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 400 50
+[ERROR] 2025-03-16 11:18:31,752 apps.utils.helpers.verifications.mailgun | Failed to send mail: 403 Client Error: Forbidden for url: https://api.mailgun.net/v3/sandbox7ec8996f9c724da2b08c0eb49811d1fd.mailgun.org/messages
+[INFO] 2025-03-16 11:18:31,842 celery.app.trace | Task apps.users.tasks.send_email_verification[bb1340a0-3019-43da-8cf8-b12c90f5f0af] succeeded in 1.2419972169991524s: None
+[INFO] 2025-03-16 11:18:31,892 django.server | "POST /api/v1/auth/register/ HTTP/1.1" 201 603
+[INFO] 2025-03-16 11:20:32,298 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-16 11:20:34,575 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 11:44:18,028 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 11:46:56,180 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 11:47:01,806 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[WARNING] 2025-03-17 13:18:42,990 django.request | Not Found: /favicon.ico
+[WARNING] 2025-03-17 13:18:42,988 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 13:18:43,010 django.server | "GET /favicon.ico HTTP/1.1" 404 2449
+[WARNING] 2025-03-17 13:18:43,011 django.server | "GET /ws/info?t=1742213922599 HTTP/1.1" 404 2453
+[INFO] 2025-03-17 15:02:00,078 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 15:02:26,525 django.server | "OPTIONS /api/websites/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 15:02:26,666 django.request | Not Found: /api/websites/
+[WARNING] 2025-03-17 15:02:26,669 django.server | "GET /api/websites/ HTTP/1.1" 404 2571
+[WARNING] 2025-03-17 15:02:58,237 django.request | Not Found: /api/websites/
+[WARNING] 2025-03-17 15:02:58,245 django.server | "GET /api/websites/ HTTP/1.1" 404 2571
+[WARNING] 2025-03-17 15:03:03,029 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 15:03:03,036 django.server | "GET /ws/info?t=1742220182967 HTTP/1.1" 404 2569
+[WARNING] 2025-03-17 15:03:03,110 django.request | Not Found: /favicon.ico
+[WARNING] 2025-03-17 15:03:03,113 django.server | "GET /favicon.ico HTTP/1.1" 404 2565
+[WARNING] 2025-03-17 15:04:15,769 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 15:04:15,773 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 5171
+[INFO] 2025-03-17 15:04:16,349 django.server | "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[INFO] 2025-03-17 15:04:16,377 django.server | "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[INFO] 2025-03-17 15:04:16,426 django.server | "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[INFO] 2025-03-17 15:04:16,443 django.server | "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[INFO] 2025-03-17 15:04:16,447 django.server | "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[INFO] 2025-03-17 15:04:16,466 django.server | "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[INFO] 2025-03-17 15:04:16,481 django.server | "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[INFO] 2025-03-17 15:04:16,511 django.server | "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[INFO] 2025-03-17 15:04:16,512 django.server | "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[INFO] 2025-03-17 15:04:16,495 django.server | "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[INFO] 2025-03-17 15:04:16,674 django.server | "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[INFO] 2025-03-17 15:04:18,725 django.server | "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[WARNING] 2025-03-17 15:04:21,488 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 15:04:21,493 django.server | "GET /ws/info?t=1742220260232 HTTP/1.1" 404 2569
+[INFO] 2025-03-17 15:07:12,689 django.server | "OPTIONS /api/v1/websites/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 15:07:12,842 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 15:07:12,844 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-17 15:08:39,122 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 15:08:39,143 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[INFO] 2025-03-17 15:11:04,563 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 15:11:06,788 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 15:11:29,172 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 2
+[INFO] 2025-03-17 15:16:09,937 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 15:16:19,258 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 15:17:08,663 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-17 15:19:39,626 django.request | Bad Request: /api/v1/websites/
+[WARNING] 2025-03-17 15:19:39,628 django.server | "POST /api/v1/websites/ HTTP/1.1" 400 69
+[INFO] 2025-03-17 15:20:40,387 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 2
+[WARNING] 2025-03-17 15:21:15,258 django.request | Bad Request: /api/v1/websites/
+[WARNING] 2025-03-17 15:21:15,260 django.server | "POST /api/v1/websites/ HTTP/1.1" 400 69
+[INFO] 2025-03-17 15:23:25,689 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 2
+[WARNING] 2025-03-17 15:24:21,026 django.request | Bad Request: /api/v1/websites/
+[WARNING] 2025-03-17 15:24:21,028 django.server | "POST /api/v1/websites/ HTTP/1.1" 400 50
+[ERROR] 2025-03-17 15:26:26,346 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2113, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '0.00'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 23, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 1007, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2120, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 1000, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2115, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'earnings' expected a number but got '0.00'.
+[ERROR] 2025-03-17 15:26:26,378 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 219997
+[ERROR] 2025-03-17 15:26:33,224 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2113, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '0.00'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 23, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 1007, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2120, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 1000, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2115, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'earnings' expected a number but got '0.00'.
+[ERROR] 2025-03-17 15:26:33,233 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 219965
+[INFO] 2025-03-17 15:33:09,423 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 15:33:29,074 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 15:34:11,878 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 456
+[INFO] 2025-03-17 15:42:22,371 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 15:42:27,190 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 15:48:28,323 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-17 15:50:50,961 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 15:50:50,964 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[INFO] 2025-03-17 15:51:08,337 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 15:51:24,930 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 480
+[INFO] 2025-03-17 15:52:41,896 django.server | "OPTIONS /api/v1/websites/1/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 15:52:42,013 django.request | Not Found: /api/v1/websites/1/
+[WARNING] 2025-03-17 15:52:42,016 django.server | "DELETE /api/v1/websites/1/ HTTP/1.1" 404 3064
+[INFO] 2025-03-17 15:58:59,188 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 480
+[INFO] 2025-03-17 16:15:26,449 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 16:15:31,561 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 16:16:19,492 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/urls.py changed, reloading.
+[INFO] 2025-03-17 16:16:22,878 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 16:17:50,337 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 16:18:27,761 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 480
+[INFO] 2025-03-17 16:18:37,939 django.server | "OPTIONS /api/v1/1/delete/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 16:18:38,124 django.request | Not Found: /api/v1/1/delete/
+[WARNING] 2025-03-17 16:18:38,127 django.server | "DELETE /api/v1/1/delete/ HTTP/1.1" 404 2583
+[INFO] 2025-03-17 16:20:38,484 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 480
+[INFO] 2025-03-17 16:20:47,285 django.server | "OPTIONS /api/v1/websites/1/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 16:20:47,338 django.server | "DELETE /api/v1/websites/1/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 16:22:10,219 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 472
+[INFO] 2025-03-17 16:31:51,826 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[INFO] 2025-03-17 16:33:51,086 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[INFO] 2025-03-17 16:34:09,303 django.server | "OPTIONS /api/v1/websites/2/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 16:34:09,408 django.server | "DELETE /api/v1/websites/2/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 16:34:31,133 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 478
+[INFO] 2025-03-17 16:39:03,610 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 480
+[INFO] 2025-03-17 16:41:45,692 django.server | "OPTIONS /api/v1/websites/3/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 16:41:45,846 django.server | "DELETE /api/v1/websites/3/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 16:43:13,667 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 472
+[WARNING] 2025-03-17 16:48:38,345 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 16:48:38,390 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[INFO] 2025-03-17 16:49:50,886 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 16:50:05,541 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[INFO] 2025-03-17 16:50:14,819 django.server | "OPTIONS /api/v1/websites/4/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 16:50:14,859 django.server | "DELETE /api/v1/websites/4/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 16:50:32,469 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 486
+[INFO] 2025-03-17 16:58:43,093 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 16:58:49,013 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 17:00:25,979 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 488
+[INFO] 2025-03-17 17:00:46,737 django.server | "OPTIONS /api/v1/websites/5/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 17:00:46,788 django.server | "DELETE /api/v1/websites/5/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 17:01:18,012 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 472
+[INFO] 2025-03-17 17:01:37,349 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[INFO] 2025-03-17 17:01:37,387 django.server | "OPTIONS /api/v1/websites/?domain=rinnd.com HTTP/1.1" 200 0
+[ERROR] 2025-03-17 17:01:38,469 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-17 17:01:38,510 django.server | "GET /api/v1/websites/?domain=rinnd.com HTTP/1.1" 500 174698
+[WARNING] 2025-03-17 17:02:03,150 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 17:02:03,152 django.server | "GET /api/v1/websites/?domain=rinnd.com HTTP/1.1" 401 5247
+[INFO] 2025-03-17 17:02:03,358 django.server | "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,370 django.server | "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,390 django.server | "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,414 django.server | "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,428 django.server | "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,447 django.server | "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,444 django.server | "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,456 django.server | "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,477 django.server | "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,495 django.server | "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:03,500 django.server | "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 17:02:06,622 django.server | "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[WARNING] 2025-03-17 17:02:07,846 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 17:02:07,849 django.server | "GET /ws/info?t=1742227327792 HTTP/1.1" 404 2569
+[INFO] 2025-03-17 17:06:00,654 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 17:06:05,844 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 17:06:40,783 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[INFO] 2025-03-17 17:06:41,036 django.server | "OPTIONS /api/v1/websites/6/verify/ HTTP/1.1" 200 0
+[ERROR] 2025-03-17 17:06:41,226 django.request | Internal Server Error: /api/v1/websites/6/verify/
+[ERROR] 2025-03-17 17:06:41,244 django.server | "POST /api/v1/websites/6/verify/ HTTP/1.1" 500 338
+[INFO] 2025-03-17 17:12:06,526 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 17:12:12,199 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 17:12:29,328 django.server | "OPTIONS /api/v1/websites/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 17:12:29,494 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[WARNING] 2025-03-17 17:12:30,200 django.request | Bad Request: /api/v1/websites/6/verify/
+[WARNING] 2025-03-17 17:12:30,203 django.server | "POST /api/v1/websites/6/verify/ HTTP/1.1" 400 282
+[INFO] 2025-03-17 17:13:12,180 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 474
+[INFO] 2025-03-17 17:15:39,818 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 481
+[INFO] 2025-03-17 17:15:45,625 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 956
+[INFO] 2025-03-17 17:15:45,693 django.server | "OPTIONS /api/v1/websites/?url=hubsrc.com HTTP/1.1" 200 0
+[ERROR] 2025-03-17 17:15:46,281 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-17 17:15:46,319 django.server | "GET /api/v1/websites/?url=hubsrc.com HTTP/1.1" 500 175012
+[INFO] 2025-03-17 17:16:02,498 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 956
+[INFO] 2025-03-17 17:16:02,651 django.server | "OPTIONS /api/v1/websites/7/verify/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 17:16:05,329 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 17:16:05,331 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 354
+[INFO] 2025-03-17 17:31:56,084 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 17:32:01,763 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-17 17:32:15,917 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 17:32:15,919 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-17 17:32:16,262 django.request | Unauthorized: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 17:32:16,266 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 401 172
+[INFO] 2025-03-17 17:32:28,852 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 17:32:31,002 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 17:32:35,740 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 956
+[WARNING] 2025-03-17 17:32:37,610 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 17:32:37,612 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 374
+[INFO] 2025-03-17 18:01:01,819 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/configs/settings/base.py changed, reloading.
+[INFO] 2025-03-17 18:01:09,407 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 18:29:37,058 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-17 18:29:38,016 environ.environ | Invalid line: WHOISXML_API_KEY = 'at_0AmtauPWPviBT1CgHAp95HBMiFNbN'
+[WARNING] 2025-03-17 18:29:38,017 environ.environ | Invalid line: OPENAI_API_KEY = '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'
+[WARNING] 2025-03-17 18:29:38,018 environ.environ | Invalid line: CLOUDFLARE_API_KEY = 'your_cloudflare_api_key'
+[WARNING] 2025-03-17 18:29:38,018 environ.environ | Invalid line: CLOUDFLARE_EMAIL = 'your_cloudflare_email'
+[WARNING] 2025-03-17 18:29:38,019 environ.environ | Invalid line: MOZ_API_KEY = 'your_moz_api_key'
+[INFO] 2025-03-17 18:30:46,653 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 18:31:35,983 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 18:31:42,350 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 956
+[WARNING] 2025-03-17 18:31:52,393 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 18:31:52,694 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[WARNING] 2025-03-17 18:31:56,684 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 18:31:56,686 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 110
+[INFO] 2025-03-17 18:34:28,485 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 18:34:33,787 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 18:34:38,360 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[WARNING] 2025-03-17 18:34:47,052 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 18:34:47,335 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[ERROR] 2025-03-17 18:34:50,626 django.request | Internal Server Error: /api/v1/websites/7/verify/
+[ERROR] 2025-03-17 18:34:50,629 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 500 123
+[INFO] 2025-03-17 18:41:48,109 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 18:41:52,194 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 18:41:59,553 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[WARNING] 2025-03-17 18:42:08,493 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 18:42:08,866 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[INFO] 2025-03-17 18:42:12,405 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 200 55
+[INFO] 2025-03-17 18:42:12,503 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[INFO] 2025-03-17 18:44:59,045 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[WARNING] 2025-03-17 18:45:14,905 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 18:45:14,919 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[INFO] 2025-03-17 18:45:18,748 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 200 55
+[INFO] 2025-03-17 18:45:18,867 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[INFO] 2025-03-17 18:46:19,572 django.server | "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-03-17 18:46:19,710 django.server | "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+[INFO] 2025-03-17 18:46:20,100 django.server | "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[INFO] 2025-03-17 18:46:20,205 django.server | "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-03-17 18:46:20,210 django.server | "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+[INFO] 2025-03-17 18:46:20,211 django.server | "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+[INFO] 2025-03-17 18:46:20,227 django.server | "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+[INFO] 2025-03-17 18:46:23,894 django.server | "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO] 2025-03-17 18:46:23,896 django.server | "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[WARNING] 2025-03-17 18:46:26,102 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 18:46:26,107 django.server | "GET /ws/info?t=1742233585852 HTTP/1.1" 404 2569
+[INFO] 2025-03-17 18:48:41,949 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 18:48:47,003 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 18:48:54,780 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[WARNING] 2025-03-17 18:49:05,306 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 18:49:05,672 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[INFO] 2025-03-17 18:49:09,564 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 200 55
+[INFO] 2025-03-17 18:49:09,637 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[INFO] 2025-03-17 18:49:28,349 django.server | "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4328
+[WARNING] 2025-03-17 18:49:30,879 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 18:49:30,883 django.server | "GET /ws/info?t=1742233770780 HTTP/1.1" 404 2569
+[INFO] 2025-03-17 18:49:36,694 django.server | "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4328
+[WARNING] 2025-03-17 18:49:38,539 django.request | Not Found: /ws/info
+[WARNING] 2025-03-17 18:49:38,544 django.server | "GET /ws/info?t=1742233778461 HTTP/1.1" 404 2569
+[INFO] 2025-03-17 19:49:09,675 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 19:49:15,513 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 19:49:37,559 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 19:49:41,735 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-03-17 19:49:52,323 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 19:49:52,336 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-17 19:49:52,579 django.request | Unauthorized: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 19:49:52,585 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 401 172
+[WARNING] 2025-03-17 19:50:15,637 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-17 19:50:15,643 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-17 19:50:15,776 django.request | Unauthorized: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 19:50:15,784 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 401 172
+[INFO] 2025-03-17 19:51:02,908 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 19:51:23,243 django.server | "OPTIONS /api/v1/websites/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 19:51:23,292 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[WARNING] 2025-03-17 19:51:25,137 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 19:51:25,141 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 303
+[INFO] 2025-03-17 19:53:55,070 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[WARNING] 2025-03-17 19:53:56,851 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 19:53:56,860 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 303
+[INFO] 2025-03-17 19:54:53,362 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[INFO] 2025-03-17 19:54:57,767 django.server | "OPTIONS /api/v1/websites/7/verify/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 19:55:00,982 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 19:55:00,990 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 303

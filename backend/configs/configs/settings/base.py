@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 MY_APPS = [
     "apps.users.apps.UsersConfig",
     "apps.utils.apps.UtilsConfig",
+    "apps.websites.apps.WebsitesConfig",
 ]
 
 INSTALLED_APPS += MY_APPS
@@ -180,7 +181,6 @@ SIMPLE_JWT = {
 }
 
 AUTH_USER_MODEL = "users.User"
-
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "apps.users.backends.PhoneNumberAuthenticationBackend",
@@ -334,7 +334,11 @@ CACHE_TTL = env.int("DJANGO_VIEW_CACHE_TTL_SECS", 60 * 15)
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cached_db"
 
-
+WHOISXML_API_KEY = os.environ.get('WHOISXML_API_KEY', '')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '')
+CLOUDFLARE_API_KEY = os.environ.get('CLOUDFLARE_API_KEY', '')
+CLOUDFLARE_EMAIL = os.environ.get('CLOUDFLARE_EMAIL', '')
+MOZ_API_KEY = os.environ.get('MOZ_API_KEY', '')
 # ________________________ HSTS
 SECURE_HSTS_SECONDS = 31536000  # Enforce HTTPS for one year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True

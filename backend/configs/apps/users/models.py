@@ -24,6 +24,8 @@ class UserManager(BaseUserManager):
         extra_fields.setdefault('is_superuser', True)
         return self.create_user(email, password, **extra_fields)
     
+    def get_by_phone_number(self, phone_number):
+        return self.filter(**{"phone_number": phone_number}).first()
 
     def get_by_email(self, email):
         return self.filter(**{"email": email}).first()
@@ -40,7 +42,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     
     role = models.CharField(
         choices=enums.UserAccountType.choices(),
-        default=enums.UserAccountType.USER.value,
+        default=enums.UserAccountType.PUBLISHER.value,
         null=False,
         blank=False,
         max_length=20
@@ -78,43 +80,43 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_fullname(self):
         return f"{self.first_name} {self.last_name}"
 
-    # def verify_email(self):
-    #     self.is_email_verified = True
-    #     self.save()
+    def verify_email(self):
+        self.is_email_verified = True
+        self.save()
     
-    # def verify_phone_number(self):
-    #     self.is_phone_number_verified = True
-    #     self.save()
+    def verify_phone_number(self):
+        self.is_phone_number_verified = True
+        self.save()
 
-    # def send_otp(self, channel="sms"):
-    #     assert self.phone_number, "User must have a valid phone number for OTP Verification"
-    #     from .tasks import send_otp_to_user
-    #     send_otp_to_user.apply_async((self.id, channel), queue=CeleryQueue.Definitions.ACCOUNT_VERIFICATION)
+    def send_otp(self, channel="sms"):
+        assert self.phone_number, "User must have a valid phone number for OTP Verification"
+        from .tasks import send_otp_to_user
+        send_otp_to_user.apply_async((self.id, channel), queue=CeleryQueue.Definitions.ACCOUNT_VERIFICATION)
 
-    # def send_email_verification(self):
-    #     assert self.email, "User must have a valid email for Email Verification"
-    #     from .tasks import send_email_verification
-    #     send_email_verification.apply_async((self.id,), queue=CeleryQueue.Definitions.ACCOUNT_VERIFICATION)
+    def send_email_verification(self):
+        assert self.email, "User must have a valid email for Email Verification"
+        from .tasks import send_email_verification
+        send_email_verification.apply_async((self.id,), queue=CeleryQueue.Definitions.ACCOUNT_VERIFICATION)
     
-    # def add_phone_number(self, phone_number):
-    #     """Update phone number and send OTP for verification."""
-    #     self.phone_number = phone_number
-    #     self.is_phone_number_verified = False
-    #     self.save()
-    #     self.send_otp(channel="sms")  # Background task via Celery
+    def add_phone_number(self, phone_number):
+        """Update phone number and send OTP for verification."""
+        self.phone_number = phone_number
+        self.is_phone_number_verified = False
+        self.save()
+        self.send_otp(channel="sms")  # Background task via Celery
     
-    # def verify_otp(self, otp):
-    #     if self.otp == otp and timezone.now() < self.otp_expiration:
-    #         self.otp = None
-    #         self.otp_expiration = None
-    #         self.save()
-    #         return True
-    #     else:
-    #         return False
+    def verify_otp(self, otp):
+        if self.otp == otp and timezone.now() < self.otp_expiration:
+            self.otp = None
+            self.otp_expiration = None
+            self.save()
+            return True
+        else:
+            return False
         
-    # def modify_points(self, added_points):
-    #     self.points += added_points
-    #     self.save()
+    def modify_points(self, added_points):
+        self.points += added_points
+        self.save()
 
     def save(self, *args, **kwargs):
         if not self.id:

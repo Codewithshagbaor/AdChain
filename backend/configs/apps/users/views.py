@@ -20,7 +20,14 @@ class UserRegistrationView(APIView):
                 send_email_verification.delay(user.id)
             else:
                 send_otp_to_user.delay(user.id, channel)
-            return Response({"message": "User created successfully. OTP is being sent."}, status=status.HTTP_201_CREATED)
+
+            tokens = serializer.get_tokens_for_user(user)
+            response = {
+                "message": "User created successfully. OTP is being sent.",
+                "role": user.role,
+                **tokens
+            }
+            return Response(response, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class RequestOTPView(APIView):
@@ -69,10 +76,15 @@ class EmailLoginView(APIView):
 
     def post(self, request, *args, **kwargs):
         serializer = LoginSerializer(data=request.data)
+        print(serializer)
         if serializer.is_valid():
             user = serializer.validated_data['user']
             tokens = serializer.get_tokens_for_user(user)
-            return Response(tokens, status=status.HTTP_200_OK)
+            data = {
+                "role": user.role
+            }
+            result = {**tokens, **data}
+            return Response(result, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class PhoneNumberLoginView(APIView):

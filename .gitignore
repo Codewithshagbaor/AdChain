@@ -289,3 +289,6 @@ dump.rdb
 apps/media/
 
 .pytest_cache/
+.qodo
+.next
+.env.local

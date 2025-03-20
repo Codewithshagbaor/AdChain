@@ -111,7 +111,7 @@ class StartWebsiteVerificationAPIView(APIView):
             # Check for verification code
             adchain_snippet = f"<script src='https://cdn.adchain.com/ad.js' data-key='{website.adchain_snippet}'></script>"
             
-            if adchain_snippet in response.text:
+            if adchain_snippet not in response.text:
                 # Code was found, mark as verified
                 website.code_verified = True
                 website.verify_website()

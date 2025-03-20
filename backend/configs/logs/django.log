@@ -2413,3 +2413,1385 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. C
 [INFO] 2025-03-17 19:54:57,767 django.server | "OPTIONS /api/v1/websites/7/verify/ HTTP/1.1" 200 0
 [WARNING] 2025-03-17 19:55:00,982 django.request | Bad Request: /api/v1/websites/7/verify/
 [WARNING] 2025-03-17 19:55:00,990 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 303
+[INFO] 2025-03-17 20:06:35,405 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 966
+[INFO] 2025-03-17 22:37:11,693 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 22:38:26,533 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 22:38:54,523 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 22:40:21,385 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 22:40:24,105 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 22:40:44,122 django.server | "OPTIONS /api/v1/websites/7/verify/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 22:40:45,658 django.request | Bad Request: /api/v1/websites/7/verify/
+[WARNING] 2025-03-17 22:40:45,660 django.server | "POST /api/v1/websites/7/verify/ HTTP/1.1" 400 303
+[INFO] 2025-03-17 22:44:12,044 django.server | "OPTIONS /api/v1/websites/7/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 22:44:12,448 django.server | "DELETE /api/v1/websites/7/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 22:44:29,213 django.server | "OPTIONS /api/v1/websites/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 22:44:29,757 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 475
+[INFO] 2025-03-17 22:44:48,394 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 950
+[INFO] 2025-03-17 22:44:48,441 django.server | "OPTIONS /api/v1/websites/?url=hubsrc.com HTTP/1.1" 200 0
+[ERROR] 2025-03-17 22:44:49,461 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-17 22:44:49,775 django.server | "GET /api/v1/websites/?url=hubsrc.com HTTP/1.1" 500 176629
+[INFO] 2025-03-17 22:46:29,783 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 950
+[INFO] 2025-03-17 22:46:29,824 django.server | "OPTIONS /api/v1/websites/8/verify/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 22:46:46,313 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 22:46:55,195 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[INFO] 2025-03-17 22:46:59,079 django.server | "POST /api/v1/websites/8/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-17 22:46:59,233 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 960
+[INFO] 2025-03-17 22:47:57,170 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 960
+[INFO] 2025-03-17 22:54:58,841 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py changed, reloading.
+[INFO] 2025-03-17 22:55:54,222 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 22:56:54,095 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 483
+[INFO] 2025-03-17 22:57:00,218 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1444
+[INFO] 2025-03-17 22:57:00,274 django.server | "OPTIONS /api/v1/websites/?url=news.bitcoin.com HTTP/1.1" 200 0
+[ERROR] 2025-03-17 22:57:00,621 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-17 22:57:00,638 django.server | "GET /api/v1/websites/?url=news.bitcoin.com HTTP/1.1" 500 177307
+[INFO] 2025-03-17 22:57:04,611 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1444
+[INFO] 2025-03-17 22:57:04,664 django.server | "OPTIONS /api/v1/websites/9/verify/ HTTP/1.1" 200 0
+[WARNING] 2025-03-17 22:57:17,094 apps.websites.models | Error checking SSL certificate: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'https://news.bitcoin.com'. (_ssl.c:1000)
+[WARNING] 2025-03-17 22:57:17,737 apps.websites.models | Error checking DNS records: The DNS response does not contain an answer to the question: https://news.bitcoin.com. IN MX
+[INFO] 2025-03-17 22:57:20,845 django.server | "POST /api/v1/websites/9/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-17 22:57:20,980 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1440
+[INFO] 2025-03-17 23:17:35,265 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 23:18:22,044 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 23:19:29,618 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-17 23:19:57,753 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 479
+[INFO] 2025-03-17 23:20:04,028 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1920
+[INFO] 2025-03-17 23:20:04,070 django.server | "OPTIONS /api/v1/websites/?url=crypto.news HTTP/1.1" 200 0
+[ERROR] 2025-03-17 23:20:04,540 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-17 23:20:04,555 django.server | "GET /api/v1/websites/?url=crypto.news HTTP/1.1" 500 177322
+[INFO] 2025-03-17 23:20:07,733 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1920
+[INFO] 2025-03-17 23:20:07,828 django.server | "OPTIONS /api/v1/websites/10/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 23:20:11,592 apps.websites.models | Scrapping website
+[INFO] 2025-03-17 23:20:15,593 apps.websites.models | Domain info: {
+  "domain_name": "crypto.news",
+  "registrar": "NAMECHEAP INC",
+  "registrar_url": [
+    "https://www.namecheap.com/",
+    "http://www.namecheap.com"
+  ],
+  "reseller": "NAMECHEAP INC",
+  "whois_server": "whois.namecheap.com",
+  "referral_url": null,
+  "updated_date": [
+    "2023-12-06 17:37:38",
+    "2023-12-01 17:37:17.990000"
+  ],
+  "creation_date": [
+    "2017-04-28 11:20:53",
+    "2017-04-28 11:20:53.450000"
+  ],
+  "expiration_date": [
+    "2028-04-28 11:20:53",
+    "2028-04-28 11:20:53.450000"
+  ],
+  "name_servers": [
+    "zeus.ns.cloudflare.com",
+    "keyla.ns.cloudflare.com"
+  ],
+  "status": "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+  "emails": [
+    "abuse@namecheap.com",
+    "968dadcc6f554e20910f46cb71db7232.protect@withheldforprivacy.com"
+  ],
+  "dnssec": [
+    "signedDelegation",
+    "unsigned"
+  ],
+  "name": "REDACTED FOR PRIVACY",
+  "org": "Privacy service provided by Withheld for Privacy ehf",
+  "address": [
+    "REDACTED FOR PRIVACY",
+    "Kalkofnsvegur 2"
+  ],
+  "city": [
+    "REDACTED FOR PRIVACY",
+    "Reykjavik"
+  ],
+  "state": "Capital Region",
+  "registrant_postal_code": [
+    "REDACTED FOR PRIVACY",
+    "101"
+  ],
+  "country": "IS"
+}
+[INFO] 2025-03-17 23:20:15,594 apps.websites.models | Totla checks: 30
+[WARNING] 2025-03-17 23:20:15,923 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 23:20:16,991 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://crypto.news.
+[INFO] 2025-03-17 23:20:20,225 django.server | "POST /api/v1/websites/10/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-17 23:20:20,357 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1916
+[INFO] 2025-03-17 23:21:17,026 django.server | "POST /api/v1/websites/10/verify/ HTTP/1.1" 200 41
+[INFO] 2025-03-17 23:21:17,125 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1916
+[INFO] 2025-03-17 23:28:29,580 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 23:29:03,055 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 23:32:15,323 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-17 23:32:55,294 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-17 23:33:08,711 django.server | "OPTIONS /api/v1/websites/10/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 23:33:08,919 django.server | "DELETE /api/v1/websites/10/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 23:33:16,049 django.server | "OPTIONS /api/v1/websites/9/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 23:33:16,092 django.server | "DELETE /api/v1/websites/9/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-17 23:33:28,869 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 472
+[INFO] 2025-03-17 23:33:34,041 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1433
+[ERROR] 2025-03-17 23:33:34,423 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-17 23:33:34,432 django.server | "GET /api/v1/websites/?url=crypto.news HTTP/1.1" 500 176992
+[INFO] 2025-03-17 23:33:37,673 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1433
+[INFO] 2025-03-17 23:33:37,819 django.server | "OPTIONS /api/v1/websites/11/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-17 23:33:41,212 apps.websites.models | Scraping website https://crypto.news
+[ERROR] 2025-03-17 23:33:45,904 apps.websites.models | Error detecting spam: [Errno 2] No such file or directory: 'ml/spam_model.pkl'
+[ERROR] 2025-03-17 23:33:48,520 apps.websites.models | Error detecting AI text: float() argument must be a string or a real number, not 'list'
+[INFO] 2025-03-17 23:33:48,523 apps.websites.models | Content quality score: 100 (Spam: 0, AI: 0)
+[INFO] 2025-03-17 23:33:52,395 apps.websites.models | Domain info: {
+  "domain_name": "crypto.news",
+  "registrar": "NAMECHEAP INC",
+  "registrar_url": [
+    "https://www.namecheap.com/",
+    "http://www.namecheap.com"
+  ],
+  "reseller": "NAMECHEAP INC",
+  "whois_server": "whois.namecheap.com",
+  "referral_url": null,
+  "updated_date": [
+    "2023-12-06 17:37:38",
+    "2023-12-01 17:37:17.990000"
+  ],
+  "creation_date": [
+    "2017-04-28 11:20:53",
+    "2017-04-28 11:20:53.450000"
+  ],
+  "expiration_date": [
+    "2028-04-28 11:20:53",
+    "2028-04-28 11:20:53.450000"
+  ],
+  "name_servers": [
+    "zeus.ns.cloudflare.com",
+    "keyla.ns.cloudflare.com"
+  ],
+  "status": "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+  "emails": [
+    "abuse@namecheap.com",
+    "968dadcc6f554e20910f46cb71db7232.protect@withheldforprivacy.com"
+  ],
+  "dnssec": [
+    "signedDelegation",
+    "unsigned"
+  ],
+  "name": "REDACTED FOR PRIVACY",
+  "org": "Privacy service provided by Withheld for Privacy ehf",
+  "address": [
+    "REDACTED FOR PRIVACY",
+    "Kalkofnsvegur 2"
+  ],
+  "city": [
+    "REDACTED FOR PRIVACY",
+    "Reykjavik"
+  ],
+  "state": "Capital Region",
+  "registrant_postal_code": [
+    "REDACTED FOR PRIVACY",
+    "101"
+  ],
+  "country": "IS"
+}
+[INFO] 2025-03-17 23:33:52,397 apps.websites.models | Total checks: 30
+[WARNING] 2025-03-17 23:33:52,510 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-17 23:33:53,008 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://crypto.news.
+[WARNING] 2025-03-17 23:33:56,815 apps.websites.models | Error checking HTTP response: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /crypto.news (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7a33b6678140>: Failed to resolve 'https' ([Errno -2] Name or service not known)"))
+[WARNING] 2025-03-17 23:34:00,561 apps.websites.models | Error checking robots.txt: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /crypto.news/robots.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7a33b681e690>: Failed to resolve 'https' ([Errno -2] Name or service not known)"))
+[INFO] 2025-03-17 23:34:01,546 django.server | "POST /api/v1/websites/11/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-17 23:34:01,657 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1431
+[INFO] 2025-03-17 23:34:42,667 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1431
+[INFO] 2025-03-18 00:04:39,461 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:05:37,596 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:07:14,278 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:08:06,549 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:08:30,877 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:09:25,945 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:09:32,495 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-18 00:09:50,892 django.server | "OPTIONS /api/v1/websites/11/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:09:50,951 django.server | "DELETE /api/v1/websites/11/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-18 00:10:06,948 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 477
+[INFO] 2025-03-18 00:10:11,873 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1438
+[ERROR] 2025-03-18 00:10:12,217 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-18 00:10:12,228 django.server | "GET /api/v1/websites/?url=crypto.news HTTP/1.1" 500 176992
+[INFO] 2025-03-18 00:10:15,700 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1438
+[INFO] 2025-03-18 00:10:15,805 django.server | "OPTIONS /api/v1/websites/12/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:10:20,689 apps.websites.models | Scraping website https://crypto.news
+[ERROR] 2025-03-18 00:10:29,028 apps.websites.models | Error detecting AI text: float() argument must be a string or a real number, not 'list'
+[ERROR] 2025-03-18 00:10:29,029 apps.websites.models | Error calculating content quality score: '>' not supported between instances of 'str' and 'int'
+[INFO] 2025-03-18 00:10:32,971 apps.websites.models | Domain info: {
+  "domain_name": "crypto.news",
+  "registrar": "NAMECHEAP INC",
+  "registrar_url": [
+    "https://www.namecheap.com/",
+    "http://www.namecheap.com"
+  ],
+  "reseller": "NAMECHEAP INC",
+  "whois_server": "whois.namecheap.com",
+  "referral_url": null,
+  "updated_date": [
+    "2023-12-06 17:37:38",
+    "2023-12-01 17:37:17.990000"
+  ],
+  "creation_date": [
+    "2017-04-28 11:20:53",
+    "2017-04-28 11:20:53.450000"
+  ],
+  "expiration_date": [
+    "2028-04-28 11:20:53",
+    "2028-04-28 11:20:53.450000"
+  ],
+  "name_servers": [
+    "zeus.ns.cloudflare.com",
+    "keyla.ns.cloudflare.com"
+  ],
+  "status": "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+  "emails": [
+    "abuse@namecheap.com",
+    "968dadcc6f554e20910f46cb71db7232.protect@withheldforprivacy.com"
+  ],
+  "dnssec": [
+    "signedDelegation",
+    "unsigned"
+  ],
+  "name": "REDACTED FOR PRIVACY",
+  "org": "Privacy service provided by Withheld for Privacy ehf",
+  "address": [
+    "REDACTED FOR PRIVACY",
+    "Kalkofnsvegur 2"
+  ],
+  "city": [
+    "REDACTED FOR PRIVACY",
+    "Reykjavik"
+  ],
+  "state": "Capital Region",
+  "registrant_postal_code": [
+    "REDACTED FOR PRIVACY",
+    "101"
+  ],
+  "country": "IS"
+}
+[INFO] 2025-03-18 00:10:32,973 apps.websites.models | Total checks: 30
+[WARNING] 2025-03-18 00:10:33,285 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-18 00:10:33,970 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://crypto.news.
+[WARNING] 2025-03-18 00:10:38,192 apps.websites.models | Error checking robots.txt: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /crypto.news/robots.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x71f3cd8f40b0>: Failed to resolve 'https' ([Errno -2] Name or service not known)"))
+[INFO] 2025-03-18 00:10:39,838 django.server | "POST /api/v1/websites/12/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-18 00:10:39,959 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1434
+[INFO] 2025-03-18 00:17:50,701 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:18:25,499 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:19:18,518 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-18 00:19:27,579 django.server | "OPTIONS /api/v1/websites/12/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:19:27,648 django.server | "DELETE /api/v1/websites/12/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-18 00:19:38,889 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 462
+[INFO] 2025-03-18 00:19:42,813 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1423
+[ERROR] 2025-03-18 00:19:43,516 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-18 00:19:43,537 django.server | "GET /api/v1/websites/?url=crypto.news HTTP/1.1" 500 176992
+[INFO] 2025-03-18 00:19:45,710 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1423
+[INFO] 2025-03-18 00:19:45,931 django.server | "OPTIONS /api/v1/websites/13/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:19:49,184 apps.websites.models | Scraping website https://crypto.news
+[ERROR] 2025-03-18 00:19:53,813 apps.websites.models | Spam model not found.
+[INFO] 2025-03-18 00:19:58,190 apps.websites.models | Content quality score: 50.023216009140015 (Spam: 0, AI: 0.9995356798171997)
+[INFO] 2025-03-18 00:20:02,252 apps.websites.models | Total checks: 30
+[WARNING] 2025-03-18 00:20:02,355 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-18 00:20:02,806 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://crypto.news.
+[WARNING] 2025-03-18 00:20:06,731 apps.websites.models | Error checking robots.txt: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /crypto.news/robots.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x75f4dd8b8380>: Failed to resolve 'https' ([Errno -2] Name or service not known)"))
+[INFO] 2025-03-18 00:20:07,716 django.server | "POST /api/v1/websites/13/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-18 00:20:07,834 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 1447
+[INFO] 2025-03-18 00:22:20,166 django.server | "OPTIONS /api/v1/websites/6/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:22:20,273 django.server | "DELETE /api/v1/websites/6/delete/ HTTP/1.1" 200 29
+[ERROR] 2025-03-18 00:22:31,527 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 42, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+[ERROR] 2025-03-18 00:22:31,544 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 241779
+[ERROR] 2025-03-18 00:22:42,465 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 42, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+[ERROR] 2025-03-18 00:22:42,476 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 241779
+[ERROR] 2025-03-18 00:22:44,072 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 42, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+[ERROR] 2025-03-18 00:22:44,086 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 241779
+[INFO] 2025-03-18 00:23:30,385 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:24:11,255 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:24:20,990 django.server | "OPTIONS /api/v1/websites/13/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:24:21,193 django.server | "DELETE /api/v1/websites/13/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-18 00:24:37,833 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 479
+[INFO] 2025-03-18 00:24:41,806 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 967
+[ERROR] 2025-03-18 00:24:42,157 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-18 00:24:42,168 django.server | "GET /api/v1/websites/?url=crypto.news HTTP/1.1" 500 176702
+[INFO] 2025-03-18 00:24:44,073 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 967
+[INFO] 2025-03-18 00:24:44,178 django.server | "OPTIONS /api/v1/websites/14/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:24:46,867 apps.websites.models | Scraping website https://crypto.news
+[INFO] 2025-03-18 00:24:54,576 apps.websites.models | Content quality score: 0.02321600914001465 (Spam: 1, AI: 0.9995356798171997)
+[INFO] 2025-03-18 00:24:59,115 apps.websites.models | Total checks: 30
+[WARNING] 2025-03-18 00:24:59,250 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-18 00:24:59,841 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://crypto.news.
+[WARNING] 2025-03-18 00:25:04,002 apps.websites.models | Error checking robots.txt: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /crypto.news/robots.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ad0a87b9be0>: Failed to resolve 'https' ([Errno -2] Name or service not known)"))
+[INFO] 2025-03-18 00:25:05,028 django.server | "POST /api/v1/websites/14/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-18 00:25:05,167 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 992
+[INFO] 2025-03-18 00:25:35,598 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:26:14,950 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:28:17,477 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:28:57,093 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 00:29:19,204 django.server | "OPTIONS /api/v1/websites/14/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:29:19,343 django.server | "DELETE /api/v1/websites/14/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-18 00:29:34,050 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 479
+[INFO] 2025-03-18 00:29:37,374 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 967
+[ERROR] 2025-03-18 00:29:37,819 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-18 00:29:37,838 django.server | "GET /api/v1/websites/?url=crypto.news HTTP/1.1" 500 176702
+[INFO] 2025-03-18 00:29:41,124 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 967
+[INFO] 2025-03-18 00:29:41,305 django.server | "OPTIONS /api/v1/websites/15/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:29:44,676 apps.websites.models | Scraping website https://crypto.news
+[INFO] 2025-03-18 00:29:51,645 apps.websites.models | Content quality score: 0.02321600914001465 (Spam: 1, AI: 0.9995356798171997)
+[INFO] 2025-03-18 00:30:04,592 apps.websites.models | Total checks: 30
+[WARNING] 2025-03-18 00:30:04,688 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-18 00:30:04,990 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://crypto.news.
+[INFO] 2025-03-18 00:30:08,541 apps.websites.models | SEO factors for https://crypto.news: {'load_speed': 14.342103004455566, 'mobile_friendly': 15, 'meta_tags': 20, 'heading_structure': 10, 'https': 10, 'sitemap': 0}
+[INFO] 2025-03-18 00:30:08,541 apps.websites.models | Final SEO score: 77
+[INFO] 2025-03-18 00:30:08,632 django.server | "POST /api/v1/websites/15/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-18 00:30:08,748 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 990
+[INFO] 2025-03-18 00:33:38,191 django.server | "OPTIONS /api/v1/websites/8/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:33:38,455 django.server | "DELETE /api/v1/websites/8/delete/ HTTP/1.1" 200 29
+[ERROR] 2025-03-18 00:33:47,710 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 42, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+[ERROR] 2025-03-18 00:33:47,738 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 241277
+[ERROR] 2025-03-18 00:33:50,253 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 42, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+[ERROR] 2025-03-18 00:33:50,274 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 241277
+[INFO] 2025-03-18 00:34:25,241 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 504
+[ERROR] 2025-03-18 00:34:41,708 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 42, in post
+    serializer.save()
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: websites_websiteverification.adchain_snippet
+[ERROR] 2025-03-18 00:34:41,718 django.server | "POST /api/v1/websites/ HTTP/1.1" 500 241413
+[INFO] 2025-03-18 00:34:57,617 django.server | "OPTIONS /api/v1/websites/15/delete/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:34:57,701 django.server | "DELETE /api/v1/websites/15/delete/ HTTP/1.1" 200 29
+[INFO] 2025-03-18 00:35:14,345 django.server | "POST /api/v1/websites/ HTTP/1.1" 201 467
+[INFO] 2025-03-18 00:35:18,782 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 469
+[ERROR] 2025-03-18 00:35:19,101 django.request | Internal Server Error: /api/v1/websites/
+Traceback (most recent call last):
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/views.py", line 24, in get
+    queryset = queryset.filter(
+               ^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aftersnow/Dev Station/CandiSend/main/configs/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'domain' into field. Choices are: adchain_snippet, category, code_verified, content_quality_score, created_at, description, domain_age, earnings, id, impressions, overall_score, seo_trust_score, status, traffic_legitimacy_score, updated_at, url, user, user_id, verified_at
+[ERROR] 2025-03-18 00:35:19,114 django.server | "GET /api/v1/websites/?url=hubsrc.com HTTP/1.1" 500 176339
+[INFO] 2025-03-18 00:35:21,276 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 469
+[INFO] 2025-03-18 00:35:21,406 django.server | "OPTIONS /api/v1/websites/16/verify/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 00:35:26,109 apps.websites.models | Scraping website https://hubsrc.com
+[WARNING] 2025-03-18 00:35:27,441 apps.websites.models | Failed to extract text from website https://hubsrc.com
+[INFO] 2025-03-18 00:35:29,922 apps.websites.models | Total checks: 30
+[WARNING] 2025-03-18 00:35:30,277 apps.websites.models | Error checking SSL certificate: [Errno -2] Name or service not known
+[WARNING] 2025-03-18 00:35:30,313 apps.websites.models | Error checking DNS records: The DNS query name does not exist: https://hubsrc.com.
+[INFO] 2025-03-18 00:35:34,581 apps.websites.models | SEO factors for https://hubsrc.com: {'load_speed': 11.813359260559082, 'mobile_friendly': 15, 'meta_tags': 0, 'heading_structure': 10, 'https': 10, 'sitemap': 0}
+[INFO] 2025-03-18 00:35:34,582 apps.websites.models | Final SEO score: 52
+[INFO] 2025-03-18 00:35:34,711 django.server | "POST /api/v1/websites/16/verify/ HTTP/1.1" 200 77
+[INFO] 2025-03-18 00:35:34,926 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 465
+[INFO] 2025-03-18 00:40:12,026 django.utils.autoreload | /home/aftersnow/Dev Station/AdChain/backend/configs/apps/websites/models.py changed, reloading.
+[INFO] 2025-03-18 00:40:56,785 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-03-18 01:48:00,019 django.server | "OPTIONS /api/v1/auth/email/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 01:48:03,436 django.server | "POST /api/v1/auth/email/ HTTP/1.1" 200 545
+[INFO] 2025-03-18 01:48:09,071 django.server | "OPTIONS /api/v1/websites/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 01:48:09,074 django.server | "OPTIONS /api/v1/websites/ HTTP/1.1" 200 0
+[INFO] 2025-03-18 01:48:09,184 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 465
+[INFO] 2025-03-18 01:48:09,291 django.server | "GET /api/v1/websites/ HTTP/1.1" 200 465
+[WARNING] 2025-03-18 13:24:32,687 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-18 13:24:32,806 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-18 13:24:46,864 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-18 13:24:46,866 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-18 13:36:31,494 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-18 13:36:31,515 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-18 14:06:51,450 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-18 14:06:51,489 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-18 14:09:03,573 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-18 14:09:03,584 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172
+[WARNING] 2025-03-18 14:12:40,402 django.request | Unauthorized: /api/v1/websites/
+[WARNING] 2025-03-18 14:12:40,415 django.server | "GET /api/v1/websites/ HTTP/1.1" 401 172

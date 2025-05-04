@@ -47,6 +47,7 @@ import { Progress } from "@/components/ui/progress"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
+import { DashboardLayout } from "@/components/dashboard/dashboard-layout"
 
 
 interface Website {
@@ -380,6 +381,7 @@ export default function PublisherWebsitesPage() {
   }
 
   return (
+    <DashboardLayout userType="publisher">
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between">
         <div>
@@ -851,5 +853,6 @@ export default function PublisherWebsitesPage() {
         </DialogContent>
       </Dialog>
     </div>
+    </DashboardLayout>
   )
 }

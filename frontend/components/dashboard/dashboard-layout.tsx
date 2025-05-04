@@ -10,15 +10,11 @@ import { OverviewSidebar } from "@/components/dashboard/overview-sidebar"
 interface DashboardLayoutProps {
   children: ReactNode
   userType: "advertiser" | "publisher" | "overview"
-  isWalletConnected?: boolean
-  onConnectWallet?: () => void
 }
 
 export function DashboardLayout({
   children,
   userType,
-  isWalletConnected = true,
-  onConnectWallet = () => {},
 }: DashboardLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
@@ -30,16 +26,12 @@ export function DashboardLayout({
           <AdvertiserSidebar
             isSidebarOpen={isSidebarOpen}
             setIsSidebarOpen={setIsSidebarOpen}
-            isWalletConnected={isWalletConnected}
-            onConnectWallet={onConnectWallet}
           />
         )}
         {userType === "publisher" && (
           <PublisherSidebar
             isSidebarOpen={isSidebarOpen}
             setIsSidebarOpen={setIsSidebarOpen}
-            isWalletConnected={isWalletConnected}
-            onConnectWallet={onConnectWallet}
           />
         )}
         {userType === "overview" && (

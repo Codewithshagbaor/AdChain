@@ -4,8 +4,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
-from .serializers import WebsiteVerificationSerializer
-from .models import WebsiteVerification, Webhook
+from .serializers import WebsiteVerificationSerializer, AdUnitSerializer
+from .models import WebsiteVerification, Webhook, AdUnit
 from django.db.models import Q
 import requests
 class WebsiteVerificationAPIView(APIView):
@@ -174,4 +174,66 @@ class WebhookAPIView(APIView):
         if webhook:
             return Response({"webhook_url": webhook.url}, status=status.HTTP_200_OK)
         return Response({"message": "No webhook set"}, status=status.HTTP_404_NOT_FOUND)
+    
+class AdUnitAPIView(APIView):
+    permission_classes = [IsAuthenticated]
 
+    def get(self, request):
+        ad_units = AdUnit.objects.filter(user=request.user)
+        serializer = AdUnitSerializer(ad_units, many=True)
+        return Response(
+            {
+                "ad_units": serializer.data,
+                "message": "Ad units retrieved successfully"
+            }, status=status.HTTP_200_OK)
+class CreateAdUnitAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        data = request.data.copy()
+        data['user'] = request.user.id
+        website = get_object_or_404(WebsiteVerification, url=data['website'])
+        data['website'] = website.id
+        # Check if user has permission to create an ad unit for this website
+        if website.user != request.user:
+            return Response(
+                {"error": "You don't have permission to create an ad unit for this website"},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        serializer = AdUnitSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save(user=request.user)
+            serializer.instance.approve
+            serializer.instance.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class UpdateAdUnitAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def put(self, request, id):
+        ad_unit = get_object_or_404(AdUnit, id=id, user=request.user)
+        serializer = AdUnitSerializer(ad_unit, data=request.data)
+        if ad_unit.website.user != request.user:
+            return Response(
+                {"error": "You don't have permission to update this ad unit"},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class DeleteAdUnitAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def delete(self, request, id):
+        ad_unit = get_object_or_404(AdUnit, id=id, user=request.user)
+
+        if ad_unit.website.user != request.user:
+            return Response(
+                {"error": "You don't have permission to delete this ad unit"},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        ad_unit.delete()
+        return Response({"message": "Ad unit deleted successfully"}, status=status.HTTP_204_NO_CONTENT)

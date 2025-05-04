@@ -137,3 +137,9 @@ class user_validate_data():
             errors['restaurant'] = "The restaurant is invalid."
         return errors
     
+    def validate_user_wallet_address(data):
+        errors = {}
+        wallet_address = data.get('wallet_address')
+        if wallet_address and not re.match(r'^[a-zA-Z0-9]{42}$', wallet_address):
+            errors['wallet_address'] = "The wallet address is invalid."
+        return errors

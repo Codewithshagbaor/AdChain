@@ -432,7 +432,7 @@ class WebsiteVerification(models.Model):
         return self.overall_score
     
     def auto_approve(self):
-        if self.overall_score and self.overall_score >= 75:
+        if self.overall_score and self.overall_score >= 50:
             self.status = 'approved'
         else:
             self.status = 'rejected'
@@ -478,6 +478,70 @@ class WebsiteVerification(models.Model):
 # Webhook URL Model
 class Webhook(models.Model):
     url = models.URLField()
+
+class AdUnit(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    website = models.ForeignKey(WebsiteVerification, on_delete=models.CASCADE)
+
+    ad_unit_id = models.CharField(max_length=255, blank=True, null=True)
+
+    ad_unit_type = models.CharField(
+        choices=enums.AdUnitType.choices(),
+        default=enums.AdUnitType.BANNER.value,
+        null=False,
+        blank=False,
+        max_length=20
+    )
+
+    ad_unit_size = models.CharField(
+        choices=enums.AdUnitSize.choices(),
+        default=enums.AdUnitSize.LEADERBOARD.value,
+        null=False,
+        blank=False,
+        max_length=20
+    )
+    ad_unit_name = models.CharField(max_length=255)
+
+    ad_unit_code = models.TextField(blank=True, null=True)
+    ad_unit_clicks = models.PositiveBigIntegerField(default=0)
+    ad_unit_impressions = models.PositiveBigIntegerField(default=0)
+    ad_unit_revenue = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    ad_unit_ctr = models.DecimalField(max_digits=5, decimal_places=2, default=0.00)
+
+
+    status = models.CharField(
+        choices=enums.AdUnitStatus.choices(),
+        default=enums.AdUnitStatus.PENDING.value,
+        null=False,
+        blank=False,
+        max_length=20
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+    def approve(self):
+        self.status = enums.AdUnitStatus.APPROVED.value
+        self.save()
+    def generate_ad_unit_code(self):
+        if self.ad_unit_type == enums.AdUnitType.BANNER.value:
+            self.ad_unit_code = f"<img src='https://example.com/ad/{self.ad_unit_id}' alt='{self.ad_unit_name}' width='{self.ad_unit_size}' height='auto' />"
+        elif self.ad_unit_type == enums.AdUnitType.INTERSTITIAL.value:
+            self.ad_unit_code = f"<iframe src='https://example.com/ad/{self.ad_unit_id}' width='100%' height='100%'></iframe>"
+        # Add more ad unit types as needed
+        else:
+            self.ad_unit_code = '<script src="http://127.0.0.1:8000/api/v1/ad/preview" async></script>'
+    def save(self, *args, **kwargs):
+        if not self.ad_unit_id:
+            self.ad_unit_id = get_random_string(32)
+        if not self.ad_unit_code:
+            self.generate_ad_unit_code()
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f"{self.ad_unit_id} - {self.website.url}"
 
 # Webhook Notification
 @receiver(post_save, sender=WebsiteVerification)

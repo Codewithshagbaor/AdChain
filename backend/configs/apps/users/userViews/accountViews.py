@@ -30,6 +30,21 @@ class AddPhoneNumberView(APIView):
         user.add_phone_number(phone_number)  # This triggers OTP in the background
         return Response({"message": "Phone number added. OTP sent."}, status=status.HTTP_200_OK)
 
+class AddWalletAddressView(APIView):
+    permission_classes = [IsAuthenticated, IsAccountOwner]
+
+    def post(self, request):
+        user = request.user
+        wallet_address = request.data.get("wallet_address")
+
+        # Validate wallet address
+        errors = user_validate_data.validate_user_wallet_address(request.data)
+        if errors:
+            return Response(errors, status=status.HTTP_400_BAD_REQUEST)
+
+        user.add_wallet_address(wallet_address)
+        return Response({"message": "Wallet address added successfully."}, status=status.HTTP_200_OK)
+
 
 class VerifyPhoneNumberView(APIView):
     permission_classes = [IsAuthenticated, IsAccountOwner]

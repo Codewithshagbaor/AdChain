@@ -6,6 +6,8 @@ import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {CustomConnectWallet} from "@/components/ConnectWeb3Wallet"
+import { useAccount } from "wagmi";
+
 interface SidebarBaseProps {
   children: ReactNode
   isSidebarOpen: boolean
@@ -18,19 +20,21 @@ interface SidebarBaseProps {
     onClick: () => void
   }
   isWalletConnected?: boolean
-  onConnectWallet?: () => void
 }
+
 
 export function SidebarBase({
   children,
   isSidebarOpen,
   setIsSidebarOpen,
-  walletBalance = "43.4 ETH",
-  walletBalanceUSD = "$79,157.57 USD",
+  walletBalance = "0 PTT",
+  walletBalanceUSD = "0 USDT",
   walletAction,
   isWalletConnected = true,
-  onConnectWallet,
 }: SidebarBaseProps) {
+
+  const { address, isConnected } = useAccount();
+
   return (
     <>
       <aside
@@ -55,7 +59,7 @@ export function SidebarBase({
             <nav className="grid items-start px-2 text-sm font-medium">{children}</nav>
           </div>
           <div className="mt-auto p-4">
-            {isWalletConnected ? (
+            {isConnected ? (
               <Card className="border-blue-200 dark:border-blue-800">
                 <CardHeader className="p-4 pb-2">
                   <CardTitle className="text-sm">Wallet Balance</CardTitle>

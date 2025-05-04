@@ -104,6 +104,11 @@ class User(AbstractBaseUser, PermissionsMixin):
         self.is_phone_number_verified = False
         self.save()
         self.send_otp(channel="sms")  # Background task via Celery
+
+    def add_wallet_address(self, wallet_address):
+        """Update wallet address."""
+        self.wallet_address = wallet_address
+        self.save()
     
     def verify_otp(self, otp):
         if self.otp == otp and timezone.now() < self.otp_expiration:

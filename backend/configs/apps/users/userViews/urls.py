@@ -6,6 +6,7 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path("addPhone/", AddPhoneNumberView.as_view(), name="add_phone"),
     path("verifyPhone/", VerifyPhoneNumberView.as_view(), name="verify_phone"),
+    path("addWallet/", AddWalletAddressView.as_view(), name="add_wallet"),
     path('getUser/', UserView.as_view(), name='user-view'),
     path('changePassword/', ChangePasswordView.as_view(), name='change-password'),
     path('editAvatar/', AvatarView.as_view(), name='avatar-view'),

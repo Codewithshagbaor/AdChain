@@ -4,44 +4,22 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import {
   ArrowRight,
-  BarChart3,
-  Bell,
-  ChevronDown,
-  CreditCard,
   DollarSign,
-  FileText,
   Globe,
-  Home,
   LineChart,
-  Menu,
-  MessageSquare,
   PieChart,
   Plus,
-  Settings,
-  Sliders,
   Wallet,
-  X,
   Loader2,
-  LayoutGrid,
-  Tag
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Separator } from "@/components/ui/separator"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { DashboardLayout } from "@/components/dashboard/dashboard-layout"
+import { useAccount } from "wagmi";
 
 interface Website {
   id: string;
@@ -72,11 +50,13 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 )
 export default function PublisherDashboard() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
-  const [isWalletConnected, setIsWalletConnected] = useState(false)
   const [websites, setWebsites] = useState<Website[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState("")
+  const [impressions, setImpressions] = useState(0)
+  const [earnings, setEarnings] = useState(0)
+
+  const { address, isConnected, isDisconnected } = useAccount();
 
 
   useEffect(() => {
@@ -94,6 +74,8 @@ export default function PublisherDashboard() {
         earnings: website.earnings, // This would come from a different endpoint in a real implementation
         impressions: website.impressions, // This would come from a different endpoint in a real implementation
       }))
+      setImpressions(transformedData.reduce((acc: number, website: Website) => acc + parseInt(website.impressions), 0))
+      setEarnings(transformedData.reduce((acc: number, website: Website) => acc + parseFloat(website.earnings), 0))
 
 
       setWebsites(transformedData)
@@ -109,13 +91,9 @@ export default function PublisherDashboard() {
     website.domain.toLowerCase().includes(searchQuery.toLowerCase())
   )
 
-  const handleConnectWallet = () => {
-    // Simulate wallet connection
-    setIsWalletConnected(true)
-  }
 
   return (
-    <DashboardLayout userType="publisher" isWalletConnected={isWalletConnected} onConnectWallet={handleConnectWallet}>
+    <DashboardLayout userType="publisher">
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-bold tracking-tight">Publisher Dashboard</h1>
@@ -127,23 +105,6 @@ export default function PublisherDashboard() {
             </Button>
           </div>
 
-          {!isWalletConnected && (
-            <Alert className="border-blue-200 bg-blue-50 dark:border-blue-800 dark:bg-blue-950/50 mb-2">
-              <Wallet className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-              <AlertTitle>Wallet not connected</AlertTitle>
-              <AlertDescription>
-                Connect your wallet to access all features and manage your earnings.
-                <Button
-                  variant="link"
-                  className="text-blue-600 dark:text-blue-400 p-0 h-auto ml-2"
-                  onClick={handleConnectWallet}
-                >
-                  Connect now
-                </Button>
-              </AlertDescription>
-            </Alert>
-          )}
-
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <Card className="border-blue-200 dark:border-blue-800 overflow-hidden">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-gradient-to-r from-blue-500/10 to-blue-700/10">
@@ -151,14 +112,7 @@ export default function PublisherDashboard() {
                 <DollarSign className="h-4 w-4 text-blue-600" />
               </CardHeader>
               <CardContent className="pt-4">
-                <div className="text-2xl font-bold">32.45 ETH</div>
-                <div className="flex items-center justify-between">
-                  <p className="text-xs text-muted-foreground">≈ $59,128.76 USD</p>
-                  <div className="text-xs text-green-500 flex items-center">
-                    <ArrowRight className="mr-1 h-3 w-3 rotate-45" />
-                    +18.3% from last month
-                  </div>
-                </div>
+                <div className="text-2xl font-bold">{`${earnings} PTT`}</div>
               </CardContent>
             </Card>
             <Card className="border-blue-200 dark:border-blue-800 overflow-hidden">
@@ -167,13 +121,20 @@ export default function PublisherDashboard() {
                 <LineChart className="h-4 w-4 text-blue-600" />
               </CardHeader>
               <CardContent className="pt-4">
-                <div className="text-2xl font-bold">2.8M</div>
+                <div className="text-2xl font-bold">{impressions}</div>
                 <div className="flex items-center justify-between">
                   <p className="text-xs text-muted-foreground">Last 30 days</p>
-                  <div className="text-xs text-green-500 flex items-center">
-                    <ArrowRight className="mr-1 h-3 w-3 rotate-45" />
-                    +15.2% from last month
-                  </div>
+                  {impressions == 0 ?
+                    <div className="text-xs text-red-500 flex items-center">
+                      <ArrowRight className="mr-1 h-3 w-3 rotate-45" />
+                      No data
+                    </div>
+                    :
+                    <div className="text-xs text-green-500 flex items-center">
+                      <ArrowRight className="mr-1 h-3 w-3 rotate-45" />
+                      +12.5% from last month
+                    </div>
+                  }
                 </div>
               </CardContent>
             </Card>
@@ -246,7 +207,7 @@ export default function PublisherDashboard() {
                 <CardDescription>Your recent earnings and withdrawals</CardDescription>
               </CardHeader>
               <CardContent>
-                {isWalletConnected ? (
+                {isConnected ? (
                   <div className="space-y-4">
                     {[
                       {
@@ -333,14 +294,10 @@ export default function PublisherDashboard() {
                     <p className="text-sm text-muted-foreground mb-4 max-w-md">
                       Connect your wallet to view your payment history and manage your earnings
                     </p>
-                    <Button className="bg-gradient-to-r from-blue-500 to-blue-700" onClick={handleConnectWallet}>
-                      <Wallet className="mr-2 h-4 w-4" />
-                      Connect Wallet
-                    </Button>
                   </div>
                 )}
               </CardContent>
-              {isWalletConnected && (
+              {isConnected && (
                 <CardFooter>
                   <Button variant="outline" className="w-full">
                     View All Transactions
